@@ -1,0 +1,16 @@
+{
+  "page": {
+    "title": "Um zu beginnen, bearbeiten Sie die Datei page.tsx.",
+    "description": "Suchen Sie nach einem Ausgangspunkt oder weiteren Anweisungen? Besuchen Sie",
+    "templates": "Vorlagen",
+    "or": "oder das",
+    "learning": "Lern",
+    "center": "zentrum.",
+    "deployNow": "Jetzt bereitstellen",
+    "documentation": "Dokumentation"
+  },
+  "metadata": {
+    "title": "Next App erstellen",
+    "description": "Generiert von create next app"
+  }
+}
