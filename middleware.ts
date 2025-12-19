@@ -21,10 +21,16 @@ export function middleware(request: NextRequest) {
   }
 
   // Check if the locale in the pathname is valid
-  const locale = pathname.split('/')[1];
+  const segments = pathname.split('/').filter(Boolean);
+  const locale = segments[0];
   if (locale && !isValidLocale(locale)) {
+    // Remove the invalid locale and create a clean path
+    const pathWithoutInvalidLocale = segments.slice(1).join('/');
+    const cleanPath = pathWithoutInvalidLocale
+      ? `/${pathWithoutInvalidLocale}`
+      : '';
     return NextResponse.redirect(
-      new URL(`/${i18n.defaultLocale}${pathname}`, request.url)
+      new URL(`/${i18n.defaultLocale}${cleanPath}`, request.url)
     );
   }
 }
@@ -36,7 +42,11 @@ function getLocale(request: NextRequest): string | undefined {
   // Simple locale detection from accept-language header
   const locales = acceptLanguage
     .split(',')
-    .map((lang) => lang.split(';')[0].trim().split('-')[0]);
+    .map((lang) => {
+      const parts = lang.split(';')[0].trim().split('-');
+      return parts[0].toLowerCase();
+    })
+    .filter((locale) => locale && locale.length > 0);
 
   for (const locale of locales) {
     if (isValidLocale(locale)) {
@@ -49,7 +59,7 @@ function getLocale(request: NextRequest): string | undefined {
 
 export const config = {
   matcher: [
-    // Skip all internal paths (_next, api, etc.)
-    '/((?!_next|api|favicon.ico|.*\\..*|_vercel).*)',
+    // Skip all internal paths (_next, api, static assets, etc.)
+    '/((?!_next|api|favicon.ico|.*\\.(svg|png|jpg|jpeg|gif|webp|ico|css|js)|_vercel).*)',
   ],
 };
