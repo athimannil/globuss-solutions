@@ -9,8 +9,8 @@ echo "🔎 Linting..."
 npm run lint || exit 1
 
 # # Unit tests (run once, not watch mode)
-# echo "🧪 Running tests..."
-# npm run test:run || exit 1
+echo "🧪 Running tests..."
+npm run test:run || exit 1
 
 # Format and lint staged files
 echo "✨ Formatting staged files..."

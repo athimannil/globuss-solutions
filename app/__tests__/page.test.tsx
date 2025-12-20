@@ -1,13 +1,10 @@
-import { expect, test } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import { expect, test } from 'vitest';
 
-import Page from '@/app/page';
+import Page from '@/app/[locale]/page';
 
-test('Page', () => {
-  render(<Page />);
-  expect(
-    screen.getByRole('heading', {
-      level: 1,
-    })
-  ).toHaveTextContent('To get started, edit the page.tsx file.');
+test('Home page renders', async () => {
+  const params = Promise.resolve({ locale: 'en' as const });
+  render(await Page({ params }));
+  expect(screen.getByRole('heading')).toBeDefined();
 });

@@ -1,0 +1,141 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy"
+  },
+  "hero": {
+    "title": "Workforce Solutions That Help Your Business Succeed",
+    "subtitle": "Globuss Solutions & Co. GmbH provides reliable manpower and skilled workforce solutions to companies across Germany and Europe. Through structured recruitment and compliant staffing models, we ensure you have the right professionals at the right time.",
+    "cta": "Request Workforce Support",
+    "cta.secondary": "Learn More"
+  },
+  "stats": {
+    "years": "Years Experience",
+    "clients": "Satisfied Clients",
+    "professionals": "Placed Professionals",
+    "countries": "Countries Served"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Your Trusted Workforce Partner",
+    "description": "Globuss Solutions & Co. GmbH is a leading workforce provider...",
+    "mission": "Our mission is to bridge the gap...",
+    "history.title": "Our History",
+    "history.description": "Founded with a vision...",
+    "team.title": "Our Team",
+    "team.description": "Our experienced professionals...",
+    "values.title": "Our Values"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive Workforce Solutions",
+    "intro": "We provide end-to-end staffing services...",
+    "manpower.title": "Skilled Manpower Supply",
+    "manpower.description": "Access to qualified professionals...",
+    "manpower.details": "Detailed description...",
+    "recruitment.title": "Recruitment Services",
+    "recruitment.description": "Strategic hiring solutions...",
+    "recruitment.details": "Detailed description...",
+    "staffing.title": "Temporary Staffing",
+    "staffing.description": "Flexible workforce solutions...",
+    "staffing.details": "Detailed description...",
+    "compliance.title": "Compliance Management",
+    "compliance.description": "Ensuring regulatory compliance...",
+    "compliance.details": "Detailed description...",
+    "consulting.title": "HR Consulting",
+    "consulting.description": "Strategic HR advisory...",
+    "consulting.details": "Detailed description...",
+    "training.title": "Training & Development",
+    "training.description": "Upskilling programs...",
+    "training.details": "Detailed description..."
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "subtitle": "Expertise Across Multiple Sectors",
+    "aerospace": "Aerospace",
+    "aerospace.desc": "Aerospace industry solutions",
+    "energy": "Energy",
+    "energy.desc": "Energy sector staffing",
+    "automotive": "Automotive",
+    "automotive.desc": "Automotive industry experts",
+    "telecom": "Telecommunications",
+    "telecom.desc": "Telecom professionals",
+    "education": "Education",
+    "education.desc": "Educational staffing",
+    "electronics": "Electronics",
+    "electronics.desc": "Electronics sector",
+    "network": "Networking",
+    "network.desc": "Network specialists",
+    "lifescience": "Life Sciences",
+    "lifescience.desc": "Life sciences staffing"
+  },
+  "why": {
+    "title": "Why Choose Us",
+    "subtitle": "What Sets Us Apart",
+    "reliability": "Reliability",
+    "reliability.desc": "Consistent and dependable service",
+    "compliance": "Compliance",
+    "compliance.desc": "Full regulatory compliance",
+    "quality": "Quality",
+    "quality.desc": "Top-tier professionals",
+    "flexibility": "Flexibility",
+    "flexibility.desc": "Adaptable solutions",
+    "support": "24/7 Support",
+    "support.desc": "Round-the-clock assistance",
+    "cost": "Cost-Effective",
+    "cost.desc": "Competitive pricing"
+  },
+  "process": {
+    "title": "Our Process",
+    "subtitle": "How We Work",
+    "step1.title": "Consultation",
+    "step1.desc": "Understanding your needs",
+    "step2.title": "Recruitment",
+    "step2.desc": "Finding the right talent",
+    "step3.title": "Onboarding",
+    "step3.desc": "Smooth integration",
+    "step4.title": "Support",
+    "step4.desc": "Ongoing assistance"
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "subtitle": "What Our Clients Say"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch",
+    "intro": "We'd love to hear from you",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "industry": "Industry",
+    "message": "Message",
+    "submit": "Send Message",
+    "address": "Address",
+    "hours": "Business Hours",
+    "hours.value": "Monday - Friday: 9:00 AM - 6:00 PM"
+  },
+  "cta": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Contact us today for your workforce needs",
+    "button": "Get Started"
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "Trusted by Leading Companies"
+  },
+  "footer": {
+    "description": "Professional workforce solutions across Europe",
+    "location": "Hauptstraße 123, 10115 Berlin, Germany",
+    "rights": "All rights reserved.",
+    "services": "Services",
+    "company": "Company",
+    "legal": "Legal",
+    "connect": "Connect With Us"
+  }
+}

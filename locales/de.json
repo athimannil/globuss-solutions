@@ -1,0 +1,141 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "hero": {
+    "title": "Personallösungen, die Ihr Unternehmen voranbringen",
+    "subtitle": "Die Globuss Solutions & Co. GmbH bietet zuverlässige Personal- und Fachkräftelösungen für Unternehmen in Deutschland und Europa. Durch strukturierte Rekrutierung und rechtskonforme Personallösungen stellen wir sicher, dass Ihnen die richtigen Fachkräfte zur richtigen Zeit zur Verfügung stehen.",
+    "cta": "Personal anfragen",
+    "cta.secondary": "Mehr erfahren"
+  },
+  "stats": {
+    "years": "Jahre Erfahrung",
+    "clients": "Zufriedene Kunden",
+    "professionals": "Vermittelte Fachkräfte",
+    "countries": "Länder bedient"
+  },
+  "about": {
+    "title": "Über uns",
+    "subtitle": "Ihr vertrauenswürdiger Personalpartner",
+    "description": "Die Globuss Solutions & Co. GmbH ist ein in Berlin ansässiger Anbieter von Personallösungen und Workforce-Dienstleistungen. Wir sind spezialisiert auf Personalvermittlung, Rekrutierung sowie flexible Personaleinsatzmodelle und unterstützen Unternehmen in Pflege, Industrie, Logistik und Dienstleistung.",
+    "mission": "Unser Ziel ist der Aufbau nachhaltiger und verlässlicher Personalpartnerschaften.",
+    "history.title": "Unsere Geschichte",
+    "history.description": "Gegründet mit der Vision, qualifizierte Fachkräfte mit Unternehmen zu verbinden, hat sich Globuss Solutions von einer kleinen Personalvermittlung zu einem umfassenden Anbieter von Workforce-Lösungen entwickelt. Unser Weg ist geprägt von kontinuierlicher Verbesserung, Innovation und einem unerschütterlichen Engagement für Qualität.",
+    "team.title": "Unser Team",
+    "team.description": "Unser Team besteht aus erfahrenen HR-Experten, Branchenspezialisten und engagiertem Support-Personal, die gemeinsam erstklassige Personallösungen liefern. Jedes Teammitglied bringt einzigartige Expertise und ein gemeinsames Engagement für den Kundenerfolg mit.",
+    "values.title": "Unsere Werte"
+  },
+  "services": {
+    "title": "Unsere Leistungen",
+    "subtitle": "Umfassende Personallösungen",
+    "intro": "Wir bieten ein vollständiges Spektrum an Personallösungen, die auf die vielfältigen Bedürfnisse moderner Unternehmen zugeschnitten sind. Von der Zeitarbeit bis zur Festanstellung sind unsere Dienstleistungen auf Ihre spezifischen Anforderungen abgestimmt.",
+    "manpower.title": "Bereitstellung von Fachkräften",
+    "manpower.description": "Qualifiziertes Personal nach Ihrem Bedarf",
+    "manpower.details": "Wir beschaffen und stellen qualifizierte Fachkräfte bereit, die auf Ihre spezifischen betrieblichen Anforderungen zugeschnitten sind. Unser strenger Prüfprozess stellt sicher, dass Sie einsatzbereite Mitarbeiter erhalten.",
+    "recruitment.title": "Personalvermittlung & Rekrutierung",
+    "recruitment.description": "Passgenaue Besetzung offener Stellen",
+    "recruitment.details": "Unsere Rekrutierungsspezialisten identifizieren, prüfen und vermitteln Kandidaten für Ihre offenen Positionen. Wir übernehmen den gesamten Einstellungsprozess.",
+    "staffing.title": "Temporäre & Langfristige Lösungen",
+    "staffing.description": "Flexibel und skalierbar",
+    "staffing.details": "Ob temporäre Mitarbeiter für saisonale Spitzen oder Festangestellte für Wachstum – unsere flexiblen Personallösungen skalieren mit Ihrem Unternehmen.",
+    "compliance.title": "Rechtskonforme Modelle",
+    "compliance.description": "Einhaltung aller gesetzlichen Vorgaben",
+    "compliance.details": "Alle unsere Personallösungen entsprechen dem deutschen Arbeitsrecht, EU-Vorschriften und branchenspezifischen Anforderungen.",
+    "consulting.title": "HR-Beratung",
+    "consulting.description": "Strategische Personalplanung und -optimierung",
+    "consulting.details": "Über die Vermittlung hinaus bieten wir strategische HR-Beratung zur Optimierung Ihrer Personalstruktur und Mitarbeiterbindung.",
+    "training.title": "Schulung & Entwicklung",
+    "training.description": "Weiterbildung für Ihren Erfolg",
+    "training.details": "Wir bieten Schulungsprogramme, um sicherzustellen, dass vermittelte Fachkräfte Ihre Anforderungen erfüllen."
+  },
+  "industries": {
+    "title": "Branchen",
+    "subtitle": "Spezialisierte Lösungen für jeden Sektor",
+    "aerospace": "Luft- & Raumfahrt und Verteidigung",
+    "aerospace.desc": "Luftfahrtspezialisten, Verteidigungsingenieure, Luft- und Raumfahrttechniker und Sicherheitsexperten",
+    "energy": "Energie und erneuerbare Ressourcen",
+    "energy.desc": "Energieingenieure, Spezialisten für erneuerbare Energien, Kraftwerksbetreiber und Nachhaltigkeitsexperten",
+    "automotive": "Automobilindustrie",
+    "automotive.desc": "Automobilingenieure, Produktionsspezialisten, Qualitätskontrollexperten und Supply-Chain-Manager",
+    "telecom": "Telekommunikation",
+    "telecom.desc": "Netzwerkingenieure, Telekommunikationstechniker, Infrastrukturspezialisten und Kommunikationsexperten",
+    "education": "Bildung",
+    "education.desc": "Akademische Fachkräfte, Trainer, Lehrplanentwickler und Bildungsadministratoren",
+    "electronics": "Elektronik, IT-Software & Produktentwicklungszentrum",
+    "electronics.desc": "Softwareentwickler, Elektronikingenieure, Produktdesigner und F&E-Spezialisten",
+    "network": "Netzwerk- und Sicherheitslösungen",
+    "network.desc": "Cybersicherheitsexperten, Netzwerkadministratoren, Sicherheitsanalysten und IT-Infrastrukturspezialisten",
+    "lifescience": "Life Science, Gesundheitswesen, wissenschaftliche F&E",
+    "lifescience.desc": "Forschungswissenschaftler, Gesundheitsfachkräfte, Labortechniker und klinische Spezialisten"
+  },
+  "why": {
+    "title": "Warum Globuss Solutions",
+    "subtitle": "Was uns auszeichnet",
+    "reliability": "Zuverlässigkeit",
+    "reliability.desc": "Verlässliche Personallösungen, auf die Sie zählen können – pünktlich, jedes Mal",
+    "compliance": "Rechtskonformität",
+    "compliance.desc": "Volle Einhaltung des deutschen Arbeitsrechts, der EU-Vorschriften und Branchenstandards",
+    "quality": "Qualitätskräfte",
+    "quality.desc": "Geprüfte, qualifizierte Fachkräfte, sofort einsatzbereit",
+    "flexibility": "Flexibilität",
+    "flexibility.desc": "Skalierbare Lösungen, die sich Ihren Geschäftsanforderungen anpassen",
+    "support": "24/7 Support",
+    "support.desc": "Rund-um-die-Uhr-Unterstützung für alle Ihre Personalanliegen",
+    "cost": "Kosteneffizienz",
+    "cost.desc": "Wettbewerbsfähige Preise ohne Kompromisse bei der Qualität"
+  },
+  "process": {
+    "title": "Unser Prozess",
+    "subtitle": "Wie wir arbeiten",
+    "step1.title": "Beratung",
+    "step1.desc": "Wir beginnen mit einem gründlichen Verständnis Ihrer Personalanforderungen und Unternehmenskultur.",
+    "step2.title": "Kandidatensuche",
+    "step2.desc": "Unser Team identifiziert und prüft qualifizierte Kandidaten aus unserem Netzwerk.",
+    "step3.title": "Auswahl & Matching",
+    "step3.desc": "Wir präsentieren die bestgeeigneten Kandidaten und ermöglichen Vorstellungsgespräche.",
+    "step4.title": "Onboarding & Support",
+    "step4.desc": "Wir übernehmen die Dokumentation und bieten kontinuierliche Unterstützung."
+  },
+  "testimonials": {
+    "title": "Was unsere Kunden sagen",
+    "subtitle": "Erfolgsgeschichten"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Bereit, Ihre Personalanforderungen zu besprechen?",
+    "intro": "Ob Sie einen spezifischen Personalbedarf haben oder mehr über unsere Dienstleistungen erfahren möchten – wir sind für Sie da. Kontaktieren Sie uns und lassen Sie uns besprechen, wie wir Ihr Unternehmenswachstum unterstützen können.",
+    "name": "Ihr Name",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefonnummer",
+    "company": "Firmenname",
+    "industry": "Branche",
+    "message": "Ihre Nachricht",
+    "submit": "Anfrage senden",
+    "address": "Adresse",
+    "hours": "Öffnungszeiten",
+    "hours.value": "Mo - Fr: 9:00 - 18:00 Uhr"
+  },
+  "cta": {
+    "title": "Bereit, Ihr ideales Team aufzubauen?",
+    "subtitle": "Kontaktieren Sie uns noch heute und entdecken Sie, wie Globuss Solutions Ihre Personalherausforderungen in Chancen verwandeln kann.",
+    "button": "Jetzt starten"
+  },
+  "partners": {
+    "title": "Unsere Partner",
+    "subtitle": "Unternehmen, mit denen wir zusammengearbeitet haben"
+  },
+  "footer": {
+    "description": "Personallösungen & Fachkräftevermittlung",
+    "location": "Berlin, Deutschland",
+    "rights": "Alle Rechte vorbehalten.",
+    "services": "Leistungen",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "connect": "Verbinden Sie sich"
+  }
+}
