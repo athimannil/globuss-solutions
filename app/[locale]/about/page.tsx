@@ -2,14 +2,52 @@ import {
   CheckCircle,
   Target,
   Handshake,
-  // ArrowRight,
+  ArrowRight,
   Clock,
   Shield,
   Zap,
 } from 'lucide-react';
+import Link from 'next/link';
 
 import { getDictionary } from '@/lib/dictionary';
 import { Locale } from '@/lib/i18n.config';
+
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://globusssolutions.de';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
+  const isDe = locale === 'de';
+
+  const title = isDe
+    ? 'Über uns | Globuss Solutions & Co. GmbH'
+    : 'About Us | Globuss Solutions & Co. GmbH';
+
+  const description = isDe
+    ? 'Erfahren Sie mehr über Globuss Solutions – Ihr Partner für Personalvermittlung und Workforce-Dienstleistungen in Berlin und ganz Deutschland.'
+    : 'Learn about Globuss Solutions – your partner for recruitment and workforce services in Berlin and across Germany.';
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `${SITE_URL}/${locale}/about`,
+      siteName: 'Globuss Solutions',
+      images: [`${SITE_URL}/og-default.png`],
+    },
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/about`,
+      languages: { de: '/de/about', en: '/en/about' },
+    },
+    robots: { index: true, follow: true },
+  };
+}
 
 export default async function AboutPage({
   params,
@@ -28,8 +66,18 @@ export default async function AboutPage({
     { icon: Shield, key: 'cost' },
   ];
 
+  const industries = [
+    'healthcare',
+    'industrial',
+    'logistics',
+    'facility',
+    'it',
+    'hospitality',
+  ];
+
   return (
-    <div className="pt-20">
+    <>
+      {/* Hero */}
       <section className="gradient-hero pb-20 pt-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
@@ -51,22 +99,22 @@ export default async function AboutPage({
         <div className="container mx-auto px-4">
           <div className="grid gap-16 lg:grid-cols-2">
             <div>
-              <h2 className="mb-6 text-3xl font-bold text-zinc-900 dark:text-zinc-50">
+              <h2 className="mb-6 text-3xl font-bold text-foreground">
                 {dict.about['history.title']}
               </h2>
-              <p className="mb-6 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+              <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
                 {dict.about['history.description']}
               </p>
-              <blockquote className="border-l-4 border-blue-600 py-2 pl-6 text-lg font-medium italic text-zinc-900 dark:text-zinc-50">
+              <blockquote className="border-l-4 border-accent py-2 pl-6 text-lg font-medium italic text-foreground">
                 {dict.about.mission}
               </blockquote>
             </div>
 
             <div>
-              <h2 className="mb-6 text-3xl font-bold text-zinc-900 dark:text-zinc-50">
+              <h2 className="mb-6 text-3xl font-bold text-foreground">
                 {dict.about['team.title']}
               </h2>
-              <p className="text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+              <p className="text-lg leading-relaxed text-muted-foreground">
                 {dict.about['team.description']}
               </p>
             </div>
@@ -78,8 +126,8 @@ export default async function AboutPage({
       <section className="bg-background py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto mb-12 max-w-3xl text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue-600">
-              {dict.about['values.title']}
+            <span className="text-sm font-semibold uppercase tracking-wider text-accent">
+              {dict.why.title}
             </span>
             <h2 className="mb-4 mt-2 text-3xl font-bold text-foreground md:text-4xl">
               {dict.why.subtitle}
@@ -87,40 +135,26 @@ export default async function AboutPage({
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {values.map((value, index) => {
-              const ValueIcon = value.icon;
-              const title = dict.why[
-                value.key as keyof typeof dict.why
-              ] as string;
-              const description = dict.why[
-                `${value.key}.desc` as keyof typeof dict.why
-              ] as string;
-
-              return (
-                <article
-                  key={value.key}
-                  className="group rounded-xl border border-zinc-200 bg-white p-6 transition-all hover:border-blue-600/30 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900"
-                  style={{
-                    animation: 'fadeIn 0.6s ease-out',
-                    animationDelay: `${index * 100}ms`,
-                    animationFillMode: 'both',
-                  }}
+            {values.map((value, index) => (
+              <article
+                key={value.key}
+                className="card-hover animate-fade-in group rounded-xl border border-border bg-card p-6 hover:border-primary/30"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div
+                  className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 transition-all group-hover:scale-110 group-hover:bg-accent/20"
+                  aria-hidden="true"
                 >
-                  <div
-                    className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 transition-all group-hover:scale-110 group-hover:bg-blue-100 dark:bg-blue-950 dark:group-hover:bg-blue-900"
-                    aria-hidden="true"
-                  >
-                    <ValueIcon className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <h3 className="mb-2 text-lg font-bold text-zinc-900 dark:text-zinc-50">
-                    {title}
-                  </h3>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                    {description}
-                  </p>
-                </article>
-              );
-            })}
+                  <value.icon className="h-6 w-6 text-accent" />
+                </div>
+                <h3 className="mb-2 text-lg font-bold text-foreground">
+                  {dict.why[value.key]}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {dict.why[`${value.key}.desc`]}
+                </p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -138,24 +172,13 @@ export default async function AboutPage({
           </div>
 
           <div className="mx-auto grid max-w-5xl grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-            {[
-              'aerospace',
-              'energy',
-              'automotive',
-              'telecom',
-              'education',
-              'lifescience',
-            ].map((industry) => (
+            {industries.map((industry) => (
               <div
                 key={industry}
-                className="rounded-xl border border-zinc-200 bg-white p-6 text-center transition-all hover:border-blue-600/30 hover:shadow-md dark:border-zinc-700 dark:bg-zinc-800"
+                className="rounded-xl border border-border bg-background p-6 text-center transition-all hover:border-primary/30 hover:shadow-md"
               >
-                <span className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
-                  {
-                    dict.industries[
-                      industry as keyof typeof dict.industries
-                    ] as string
-                  }
+                <span className="text-lg font-semibold text-foreground">
+                  {dict.industries[industry]}
                 </span>
               </div>
             ))}
@@ -172,14 +195,15 @@ export default async function AboutPage({
           <p className="mx-auto mb-8 max-w-xl text-lg text-primary-foreground/90">
             {dict.cta.subtitle}
           </p>
-          {/* <Button variant="hero" size="xl" asChild>
-            <Link href={`/${locale}/contact`} className="group">
-              {dict.hero.cta}
-              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Link>
-          </Button> */}
+          <Link
+            href={`/${locale}/contact`}
+            className="group inline-flex items-center gap-2 rounded-lg bg-accent px-8 py-4 text-lg font-semibold text-accent-foreground transition-all hover:bg-accent-hover hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+          >
+            {dict.hero.cta.primary}
+            <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+          </Link>
         </div>
       </section>
-    </div>
+    </>
   );
 }

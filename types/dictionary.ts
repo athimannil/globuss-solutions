@@ -10,8 +10,10 @@ export interface Dictionary {
   hero: {
     title: string;
     subtitle: string;
-    cta: string;
-    'cta.secondary': string;
+    cta: {
+      primary: string;
+      secondary: string;
+    };
   };
   stats: {
     years: string;

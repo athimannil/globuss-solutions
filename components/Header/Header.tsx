@@ -29,30 +29,32 @@ export default function Header({ locale, dict }: HeaderProps) {
   const isActive = (path: string) => {
     const fullPath = `/${locale}${path}`;
     if (path === '/') return pathname === fullPath;
-    return pathname.startsWith(fullPath);
+    return pathname?.startsWith(fullPath);
   };
 
   const toggleLanguage = () => {
     const newLocale = locale === 'en' ? 'de' : 'en';
-    const newPathname = pathname.replace(`/${locale}`, `/${newLocale}`);
+    const newPathname = pathname?.startsWith(`/${locale}`)
+      ? pathname.replace(`/${locale}`, `/${newLocale}`)
+      : `/${newLocale}${pathname ?? '/'}`;
     window.location.href = newPathname;
   };
 
   return (
     <header
-      className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/95 backdrop-blur-md"
+      className="fixed left-0 right-0 top-0 z-50 border-b border-border bg-background/95 backdrop-blur-md"
       role="banner"
     >
       {/* Top bar */}
       <div className="hidden bg-primary py-2 text-primary-foreground lg:block">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 text-sm">
+        <div className="container mx-auto flex items-center justify-between px-4 text-sm">
           <div className="flex items-center gap-6">
             <a
               href="mailto:info@globusssolutions.de"
               className="focus-ring flex items-center gap-2 rounded transition-opacity hover:opacity-80"
               aria-label="Send email to info@globusssolutions.de"
             >
-              <Mail className="size-4" aria-hidden="true" />
+              <Mail className="h-4 w-4" aria-hidden="true" />
               info@globusssolutions.de
             </a>
             <a
@@ -60,7 +62,7 @@ export default function Header({ locale, dict }: HeaderProps) {
               className="focus-ring flex items-center gap-2 rounded transition-opacity hover:opacity-80"
               aria-label="Call +49 123 456 789"
             >
-              <Phone className="size-4" aria-hidden="true" />
+              <Phone className="h-4 w-4" aria-hidden="true" />
               +49 123 456 789
             </a>
           </div>
@@ -69,7 +71,7 @@ export default function Header({ locale, dict }: HeaderProps) {
             className="focus-ring flex items-center gap-2 rounded px-2 py-1 font-medium transition-opacity hover:opacity-80"
             aria-label={`Switch to ${locale === 'en' ? 'German' : 'English'}`}
           >
-            <Globe className="size-4" aria-hidden="true" />
+            <Globe className="h-4 w-4" aria-hidden="true" />
             {locale === 'en' ? 'Deutsch' : 'English'}
           </button>
         </div>
@@ -77,7 +79,7 @@ export default function Header({ locale, dict }: HeaderProps) {
 
       {/* Main navigation */}
       <nav
-        className="mx-auto max-w-screen-2xl px-4 py-4"
+        className="container mx-auto px-4 py-4"
         role="navigation"
         aria-label="Main navigation"
       >
@@ -91,9 +93,7 @@ export default function Header({ locale, dict }: HeaderProps) {
             <Image
               src={globussLogo}
               alt=""
-              width={48}
-              height={48}
-              className="size-12 object-contain"
+              className="h-12 w-12 object-contain"
               aria-hidden="true"
             />
             <div className="hidden sm:block">
@@ -108,25 +108,26 @@ export default function Header({ locale, dict }: HeaderProps) {
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-8 lg:flex">
-            {navItems.map((item) => {
-              const label = dict.navigation[item.key];
-              const base = 'relative transition-colors py-2 font-medium';
-              const activeClass = isActive(item.href)
-                ? 'text-primary'
-                : 'text-foreground hover:text-primary';
-              return (
-                <Link
-                  key={item.key}
-                  href={`/${locale}${item.href}`}
-                  className={`${base} ${activeClass}`}
-                >
-                  {label}
-                  {isActive(item.href) && (
-                    <span className="absolute inset-x-0 bottom-0 h-0.5 rounded-full bg-primary" />
-                  )}
-                </Link>
-              );
-            })}
+            {navItems.map((item) => (
+              <Link
+                key={item.key}
+                href={`/${locale}${item.href}`}
+                className={`relative py-2 font-medium transition-colors ${
+                  isActive(item.href)
+                    ? 'text-primary'
+                    : 'text-foreground hover:text-primary'
+                }`}
+              >
+                {dict.navigation?.[item.key]}
+                {isActive(item.href) && (
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 rounded-full bg-primary" />
+                )}
+              </Link>
+            ))}
+            {/* <button variant="hero" size="lg" asChild> */}
+            <button>
+              <Link href={`/${locale}/contact`}>{dict.hero.cta.primary}</Link>
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -134,7 +135,6 @@ export default function Header({ locale, dict }: HeaderProps) {
             <button
               onClick={toggleLanguage}
               className="flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
-              aria-label={`Switch to ${locale === 'en' ? 'German' : 'English'}`}
             >
               <Globe className="h-4 w-4" />
               {locale.toUpperCase()}
@@ -157,23 +157,20 @@ export default function Header({ locale, dict }: HeaderProps) {
         {isMenuOpen && (
           <div className="animate-fade-in mt-4 border-t border-border pb-4 pt-4 lg:hidden">
             <div className="flex flex-col gap-4">
-              {navItems.map((item) => {
-                const label = dict.navigation[item.key];
-                const base = 'py-2 font-medium transition-colors';
-                const activeClass = isActive(item.href)
-                  ? 'text-primary'
-                  : 'text-foreground hover:text-primary';
-                return (
-                  <Link
-                    key={item.key}
-                    href={`/${locale}${item.href}`}
-                    onClick={() => setIsMenuOpen(false)}
-                    className={`${base} ${activeClass}`}
-                  >
-                    {label}
-                  </Link>
-                );
-              })}
+              {navItems.map((item) => (
+                <Link
+                  key={item.key}
+                  href={`/${locale}${item.href}`}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`py-2 font-medium transition-colors ${
+                    isActive(item.href)
+                      ? 'text-primary'
+                      : 'text-foreground hover:text-primary'
+                  }`}
+                >
+                  {dict.navigation?.[item.key]}
+                </Link>
+              ))}
               <div className="flex items-center gap-4 py-2 text-sm text-muted-foreground">
                 <a
                   href="mailto:info@globusssolutions.de"
@@ -183,6 +180,11 @@ export default function Header({ locale, dict }: HeaderProps) {
                   info@globusssolutions.de
                 </a>
               </div>
+              <button>
+                <Link href={'/contact'} onClick={() => setIsMenuOpen(false)}>
+                  {dict.hero.cta.primary}
+                </Link>
+              </button>
             </div>
           </div>
         )}

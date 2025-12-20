@@ -10,8 +10,10 @@
   "hero": {
     "title": "Personallösungen, die Ihr Unternehmen voranbringen",
     "subtitle": "Die Globuss Solutions & Co. GmbH bietet zuverlässige Personal- und Fachkräftelösungen für Unternehmen in Deutschland und Europa. Durch strukturierte Rekrutierung und rechtskonforme Personallösungen stellen wir sicher, dass Ihnen die richtigen Fachkräfte zur richtigen Zeit zur Verfügung stehen.",
-    "cta": "Personal anfragen",
-    "cta.secondary": "Mehr erfahren"
+    "cta": {
+      "primary": "Personal anfragen",
+      "secondary": "Mehr erfahren"
+    }
   },
   "stats": {
     "years": "Jahre Erfahrung",
@@ -117,8 +119,7 @@
     "message": "Ihre Nachricht",
     "submit": "Anfrage senden",
     "address": "Adresse",
-    "hours": "Öffnungszeiten",
-    "hours.value": "Mo - Fr: 9:00 - 18:00 Uhr"
+    "hours": "Öffnungszeiten"
   },
   "cta": {
     "title": "Bereit, Ihr ideales Team aufzubauen?",

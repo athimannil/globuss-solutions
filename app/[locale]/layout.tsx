@@ -5,7 +5,6 @@ import { i18n, type Locale } from '@/lib/i18n.config';
 import { getDictionary } from '@/lib/dictionary';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
-import '../globals.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -24,7 +23,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: string }>; // Change to string
 }): Promise<Metadata> {
   const { locale } = await params;
 
@@ -39,7 +38,7 @@ export async function generateMetadata({
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string }>; // Change to string to match Next.js types
 }
 
 export default async function LocaleLayout({
@@ -47,16 +46,18 @@ export default async function LocaleLayout({
   params,
 }: LocaleLayoutProps) {
   const { locale } = await params;
-  const dict = await getDictionary(locale as Locale);
+  // Cast to Locale here since we know it's valid due to generateStaticParams/middleware
+  const typedLocale = locale as Locale;
+  const dict = await getDictionary(typedLocale);
 
   return (
-    <html lang={locale}>
+    <html lang={typedLocale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header locale={locale as Locale} dict={dict} />
+        <Header locale={typedLocale} dict={dict} />
         <main className="min-h-screen">{children}</main>
-        <Footer locale={locale as Locale} dict={dict} />
+        <Footer locale={typedLocale} dict={dict} />
       </body>
     </html>
   );

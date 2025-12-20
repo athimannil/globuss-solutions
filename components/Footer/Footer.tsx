@@ -4,7 +4,6 @@ import { Linkedin, Facebook, Twitter, Mail, Phone, MapPin } from 'lucide-react';
 
 import { Locale } from '@/lib/i18n.config';
 import { Dictionary } from '@/types/dictionary';
-import { getNestedValue } from '@/lib/translation.utils';
 import globussLogo from '@/assets/globuss-logo.png';
 
 interface FooterProps {
@@ -13,17 +12,17 @@ interface FooterProps {
 }
 
 const services = [
-  { key: 'services.manpower.title', href: '/services' },
-  { key: 'services.recruitment.title', href: '/services' },
-  { key: 'services.staffing.title', href: '/services' },
-  { key: 'services.compliance.title', href: '/services' },
-];
+  { key: 'manpower.title', href: '/services' },
+  { key: 'recruitment.title', href: '/services' },
+  { key: 'staffing.title', href: '/services' },
+  { key: 'compliance.title', href: '/services' },
+] as const;
 
 const company = [
-  { key: 'navigation.about', href: '/about' },
-  { key: 'navigation.services', href: '/services' },
-  { key: 'navigation.contact', href: '/contact' },
-];
+  { key: 'about', href: '/about' },
+  { key: 'services', href: '/services' },
+  { key: 'contact', href: '/contact' },
+] as const;
 
 const Footer = ({ locale, dict }: FooterProps) => {
   return (
@@ -91,7 +90,7 @@ const Footer = ({ locale, dict }: FooterProps) => {
                     href={`/${locale}${item.href}`}
                     className="focus-ring rounded text-primary-foreground/70 transition-colors hover:text-accent"
                   >
-                    {getNestedValue(dict, item.key)}
+                    {dict.services?.[item.key]}
                   </Link>
                 </li>
               ))}
@@ -108,7 +107,7 @@ const Footer = ({ locale, dict }: FooterProps) => {
                     href={`/${locale}${item.href}`}
                     className="focus-ring rounded text-primary-foreground/70 transition-colors hover:text-accent"
                   >
-                    {getNestedValue(dict, item.key)}
+                    {dict.navigation?.[item.key]}
                   </Link>
                 </li>
               ))}
