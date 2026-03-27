@@ -18,6 +18,7 @@ import seaVenturesLogo from '@/assets/partners/sea-ventures.png';
 import astraLogo from '@/assets/partners/astra.png';
 import unoroamLogo from '@/assets/partners/unoroam.svg';
 import eldebnaLogo from '@/assets/partners/eldebna.png';
+import Button from '@/components/ui/Button';
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://globusssolutions.de';
@@ -134,19 +135,17 @@ export default async function Home({
             </div>
 
             <div className="animate-fade-in animation-delay-400 flex flex-wrap gap-4">
-              {/* <button variant="hero" size="xl" asChild> */}
-              <button>
+              <Button variant="hero" size="xl" asChild>
                 <Link href={`/${locale}/contact`} className="group">
                   {dict.hero.cta.primary}
                   <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
-              </button>
-              {/* <button variant="heroOutline" size="xl" asChild> */}
-              <button>
+              </Button>
+              <Button variant="heroOutline" size="xl" asChild>
                 <Link href={`/${locale}/services`}>
                   {dict.hero.cta.secondary}
                 </Link>
-              </button>
+              </Button>
             </div>
           </div>
         </div>
@@ -232,12 +231,12 @@ export default async function Home({
           </div>
 
           <div className="text-center">
-            <button>
+            <Button variant="default" size="lg" asChild>
               <Link href={`/${locale}/services`} className="group">
                 {dict.navigation.services}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
-            </button>
+            </Button>
           </div>
         </div>
       </section>
@@ -327,13 +326,12 @@ export default async function Home({
               <p className="mb-8 text-lg text-muted-foreground">
                 {dict.about.description}
               </p>
-              {/* <button variant="default" size="lg" asChild> */}
-              <button>
+              <Button variant="default" size="lg" asChild>
                 <Link href={`/${locale}/about`} className="group">
                   {dict.navigation.about}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
-              </button>
+              </Button>
             </div>
 
             <div className="grid gap-4">
@@ -371,13 +369,12 @@ export default async function Home({
           <p className="mx-auto mb-8 max-w-2xl text-lg text-primary-foreground/90">
             {dict.cta.subtitle}
           </p>
-          {/* <button variant="hero" size="xl" asChild> */}
-          <button>
+          <Button variant="hero" size="xl" asChild>
             <Link href={`/${locale}/contact`} className="group">
               {dict.cta.button}
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Link>
-          </button>
+          </Button>
         </div>
       </section>
     </>

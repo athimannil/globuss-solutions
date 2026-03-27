@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { Menu, X, Phone, Mail, Globe } from 'lucide-react';
 import { useState } from 'react';
 
+import Button from '@/components/ui/Button';
 import { Locale } from '@/lib/i18n.config';
 import { Dictionary } from '@/types/dictionary';
 import globussLogo from '@/assets/globuss-logo.png';
@@ -124,10 +125,9 @@ export default function Header({ locale, dict }: HeaderProps) {
                 )}
               </Link>
             ))}
-            {/* <button variant="hero" size="lg" asChild> */}
-            <button>
+            <Button variant="hero" size="lg" asChild>
               <Link href={`/${locale}/contact`}>{dict.hero.cta.primary}</Link>
-            </button>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -180,11 +180,11 @@ export default function Header({ locale, dict }: HeaderProps) {
                   info@globusssolutions.de
                 </a>
               </div>
-              <button>
+              <Button variant="hero" size="lg" className="mt-2" asChild>
                 <Link href={'/contact'} onClick={() => setIsMenuOpen(false)}>
                   {dict.hero.cta.primary}
                 </Link>
-              </button>
+              </Button>
             </div>
           </div>
         )}

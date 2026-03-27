@@ -11,6 +11,7 @@ import Link from 'next/link';
 
 import { getDictionary } from '@/lib/dictionary';
 import { Locale } from '@/lib/i18n.config';
+import Button from '@/components/ui/Button';
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://globusssolutions.de';
@@ -232,12 +233,12 @@ export default async function ServicesPage({
             {dict.cta?.subtitle}
           </p>
           {/* <button variant="hero" size="xl" asChild> */}
-          <button>
+          <Button>
             <Link href={`/${locale}/contact`} className="group">
               {dict.hero.cta.primary}
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Link>
-          </button>
+          </Button>
         </div>
       </section>
     </>

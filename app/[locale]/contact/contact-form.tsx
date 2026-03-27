@@ -3,12 +3,13 @@
 import { useState } from 'react';
 import { Send } from 'lucide-react';
 
-// import { Button } from '@/components/ui/button';
 // import { Input } from '@/components/ui/input';
 // import { Textarea } from '@/components/ui/textarea';
 // import { useLanguage } from '@/contexts/LanguageContext';
+
 import { useToast } from '@/components/ui/Toast';
 import { Dictionary } from '@/types/dictionary';
+import Button from '@/components/ui/Button';
 
 interface ContactFormProps {
   dict: Dictionary;
@@ -138,9 +139,27 @@ export function ContactForm({ dict, isDe }: ContactFormProps) {
           </select>
         </div>
 
-        <button
+        <div>
+          <label
+            htmlFor="message"
+            className="mb-2 block text-sm font-medium text-foreground"
+          >
+            {dict.contact.message} *
+          </label>
+          <textarea
+            id="message"
+            required
+            rows={4}
+            className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            placeholder={isDe ? 'Ihre Nachricht...' : 'Your message...'}
+          ></textarea>
+        </div>
+
+        <Button
           type="submit"
-          className="inline-flex h-12 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+          variant="hero"
+          size="lg"
+          className="w-full"
           disabled={isSubmitting}
         >
           {isSubmitting ? (
@@ -155,7 +174,7 @@ export function ContactForm({ dict, isDe }: ContactFormProps) {
               <Send className="ml-2 h-4 w-4" />
             </>
           )}
-        </button>
+        </Button>
       </form>
     </div>
   );

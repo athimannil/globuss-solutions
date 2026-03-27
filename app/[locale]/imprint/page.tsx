@@ -16,8 +16,8 @@ export async function generateMetadata({
     : 'Imprint | Globuss Solutions & Co. GmbH';
 
   const description = isDe
-    ? 'Impressum und rechtliche Informationen der Globuss Solutions & Co. GmbH, Berlin.'
-    : 'Legal notice and company information for Globuss Solutions & Co. GmbH, Berlin.';
+    ? 'Impressum und rechtliche Informationen der Globuss Solutions & Co. GmbH'
+    : 'Imprint and legal information of Globuss Solutions & Co. GmbH';
 
   return {
     title,
@@ -25,13 +25,13 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `${SITE_URL}/${locale}/service`,
+      url: `${SITE_URL}/${locale}/imprint`,
       siteName: 'Globuss Solutions',
       images: [`${SITE_URL}/og-default.png`],
     },
     alternates: {
-      canonical: `${SITE_URL}/${locale}/service`,
-      languages: { de: '/de/service', en: '/en/service' },
+      canonical: `${SITE_URL}/${locale}/imprint`,
+      languages: { de: '/de/imprint', en: '/en/imprint' },
     },
     robots: { index: true, follow: true },
   };

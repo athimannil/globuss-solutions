@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 
+import { Button } from '@/components/ui/Button';
 import { getDictionary } from '@/lib/dictionary';
 import { Locale } from '@/lib/i18n.config';
 
@@ -177,9 +178,12 @@ export default async function AboutPage({
                 key={industry}
                 className="rounded-xl border border-border bg-background p-6 text-center transition-all hover:border-primary/30 hover:shadow-md"
               >
-                <span className="text-lg font-semibold text-foreground">
-                  {dict.industries[industry]}
-                </span>
+                <h3 className="mb-2 text-lg font-bold text-foreground">
+                  {dict.industries?.[industry]}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {dict.industries?.[`${industry}.desc`]}
+                </p>
               </div>
             ))}
           </div>
@@ -195,13 +199,15 @@ export default async function AboutPage({
           <p className="mx-auto mb-8 max-w-xl text-lg text-primary-foreground/90">
             {dict.cta.subtitle}
           </p>
-          <Link
-            href={`/${locale}/contact`}
-            className="group inline-flex items-center gap-2 rounded-lg bg-accent px-8 py-4 text-lg font-semibold text-accent-foreground transition-all hover:bg-accent-hover hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
-          >
-            {dict.hero.cta.primary}
-            <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-          </Link>
+          <Button variant="hero" size="xl" asChild>
+            <Link
+              href={`/${locale}/contact`}
+              className="group inline-flex items-center gap-2 rounded-lg bg-accent px-8 py-4 text-lg font-semibold text-accent-foreground transition-all hover:bg-accent-hover hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+            >
+              {dict.hero.cta.primary}
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </Button>
         </div>
       </section>
     </>

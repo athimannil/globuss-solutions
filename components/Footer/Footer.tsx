@@ -143,7 +143,7 @@ const Footer = ({ locale, dict }: FooterProps) => {
             <div>
               <h5 className="mb-2 font-semibold">{dict.contact.hours}</h5>
               <p className="text-sm text-primary-foreground/70">
-                {dict.contact['hours.value']}
+                Mon - Fri: 9:00 AM - 6:00 PM
               </p>
             </div>
           </div>
