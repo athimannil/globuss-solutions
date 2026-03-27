@@ -4,9 +4,9 @@ import { Locale } from '@/lib/i18n.config';
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
-  const { locale } = params;
+  const { locale } = await params;
   const dict = await getDictionary(locale);
   const title =
     dict.navigation?.privacy ??
