@@ -59,7 +59,7 @@ export async function POST(req: Request) {
     const html = `<pre>${text.replace(/</g, '&lt;')}</pre>`;
 
     // Use Resend for email delivery
-    const from = email || process.env.EMAIL_FROM;
+    const from = process.env.EMAIL_FROM || email;
     const to = process.env.EMAIL_TO || email;
     const result = await sendWithResend({ from, to, subject, html });
 
