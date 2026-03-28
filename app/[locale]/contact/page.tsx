@@ -14,8 +14,7 @@ import { Toaster } from '@/components/ui/Toast';
 import { getDictionary } from '@/lib/dictionary';
 import { Locale } from '@/lib/i18n.config';
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://globusssolutions.de';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://globussco.de';
 
 export async function generateMetadata({
   params,
