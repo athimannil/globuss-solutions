@@ -99,8 +99,9 @@ export default async function PrivacyPage({
                     <p className="font-semibold text-foreground">
                       Globuss Solutions & Co. GmbH
                     </p>
-                    <p>Musterstraße 123</p>
-                    <p>10115 Berlin</p>
+                    <p>Böhlener Straße 1</p>
+                    <p>Marzahn-Hellersdorf</p>
+                    <p>12627 Berlin</p>
                     <p className="mt-2">
                       Email:{' '}
                       <a

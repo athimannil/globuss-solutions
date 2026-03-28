@@ -79,14 +79,14 @@ export default async function ContactPage({
     {
       icon: Phone,
       title: isDe ? 'Telefon' : 'Phone',
-      value: '+49 123 456 789',
-      href: 'tel:+49123456789',
+      value: '+49 (0) 152 260 88296',
+      href: 'tel:+4915226088296',
     },
     {
       icon: Mail,
       title: 'Email',
-      value: 'info@globusssolutions.de',
-      href: 'mailto:info@globusssolutions.de',
+      value: 'info@globussco.de',
+      href: 'mailto:info@globussco.de',
     },
     {
       icon: Clock,

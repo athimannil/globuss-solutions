@@ -74,8 +74,9 @@ export default async function ImprintPage({
                   <p className="font-semibold text-foreground">
                     Globuss Solutions & Co. GmbH
                   </p>
-                  <p>Musterstraße 123</p>
-                  <p>10115 Berlin</p>
+                  <p>Böhlener Straße 1</p>
+                  <p>Marzahn-Hellersdorf</p>
+                  <p>12627 Berlin</p>
                   <p>Germany</p>
                 </address>
               </div>
@@ -90,19 +91,19 @@ export default async function ImprintPage({
                       {isDe ? 'Telefon' : 'Phone'}:
                     </span>{' '}
                     <a
-                      href="tel:+49123456789"
+                      href="tel:+4915226088296"
                       className="transition-colors hover:text-accent"
                     >
-                      +49 123 456 789
+                      +49 (0) 152 260 88296
                     </a>
                   </p>
                   <p>
                     <span className="font-medium text-foreground">Email:</span>{' '}
                     <a
-                      href="mailto:info@globusssolutions.de"
+                      href="mailto:info@globussco.de"
                       className="transition-colors hover:text-accent"
                     >
-                      info@globusssolutions.de
+                      info@globussco.de
                     </a>
                   </p>
                 </div>
@@ -123,12 +124,12 @@ export default async function ImprintPage({
                     <span className="font-medium text-foreground">
                       {isDe ? 'Registernummer' : 'Registration Number'}:
                     </span>{' '}
-                    HRB 123456
+                    HRB 285003
                   </p>
                 </div>
               </div>
 
-              <div className="rounded-xl border border-border bg-card p-8">
+              <div className="hidden rounded-xl border border-border bg-card p-8">
                 <h2 className="mb-4 text-2xl font-bold text-foreground">
                   {isDe ? 'Geschäftsführung' : 'Management'}
                 </h2>
@@ -138,7 +139,7 @@ export default async function ImprintPage({
                 </p>
               </div>
 
-              <div className="rounded-xl border border-border bg-card p-8">
+              <div className="hidden rounded-xl border border-border bg-card p-8">
                 <h2 className="mb-4 text-2xl font-bold text-foreground">
                   {isDe ? 'Umsatzsteuer-ID' : 'VAT ID'}
                 </h2>
@@ -151,7 +152,7 @@ export default async function ImprintPage({
                 <p className="mt-2 font-medium text-foreground">DE123456789</p>
               </div>
 
-              <div className="rounded-xl border border-border bg-card p-8">
+              <div className="hidden rounded-xl border border-border bg-card p-8">
                 <h2 className="mb-4 text-2xl font-bold text-foreground">
                   {isDe
                     ? 'Verantwortlich für den Inhalt'
@@ -164,9 +165,10 @@ export default async function ImprintPage({
                   :
                 </p>
                 <address className="mt-2 not-italic text-muted-foreground">
-                  <p>Max Mustermann</p>
-                  <p>Musterstraße 123</p>
-                  <p>10115 Berlin</p>
+                  <p>Naeem</p>
+                  <p>Böhlener Straße 1</p>
+                  <p>Marzahn-Hellersdorf</p>
+                  <p>12627 Berlin</p>
                 </address>
               </div>
 

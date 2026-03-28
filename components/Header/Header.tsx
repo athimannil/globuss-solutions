@@ -51,20 +51,20 @@ export default function Header({ locale, dict }: HeaderProps) {
         <div className="container mx-auto flex items-center justify-between px-4 text-sm">
           <div className="flex items-center gap-6">
             <a
-              href="mailto:info@globusssolutions.de"
+              href="mailto:info@globussco.de"
               className="focus-ring flex items-center gap-2 rounded transition-opacity hover:opacity-80"
-              aria-label="Send email to info@globusssolutions.de"
+              aria-label="Send email to info@globussco.de"
             >
               <Mail className="h-4 w-4" aria-hidden="true" />
-              info@globusssolutions.de
+              info@globussco.de
             </a>
             <a
-              href="tel:+49123456789"
+              href="tel:+4915226088296"
               className="focus-ring flex items-center gap-2 rounded transition-opacity hover:opacity-80"
-              aria-label="Call +49 123 456 789"
+              aria-label="Call +49 (0) 152 260 88296"
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
-              +49 123 456 789
+              +49 (0) 152 260 88296
             </a>
           </div>
           <button
@@ -173,11 +173,11 @@ export default function Header({ locale, dict }: HeaderProps) {
               ))}
               <div className="flex items-center gap-4 py-2 text-sm text-muted-foreground">
                 <a
-                  href="mailto:info@globusssolutions.de"
+                  href="mailto:info@globussco.de"
                   className="flex items-center gap-2"
                 >
                   <Mail className="h-4 w-4" />
-                  info@globusssolutions.de
+                  info@globussco.de
                 </a>
               </div>
               <Button variant="hero" size="lg" className="mt-2" asChild>

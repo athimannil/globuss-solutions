@@ -159,7 +159,7 @@ export default async function Home({
 
       {/* Stats Section */}
       <section
-        className="relative z-20 -mt-16 bg-background py-16"
+        className="relative z-20 -mt-16 hidden bg-background py-16"
         aria-labelledby="stats-heading"
       >
         <h2 id="stats-heading" className="sr-only">

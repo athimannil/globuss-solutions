@@ -3,10 +3,6 @@
 import { useState } from 'react';
 import { Send } from 'lucide-react';
 
-// import { Input } from '@/components/ui/input';
-// import { Textarea } from '@/components/ui/textarea';
-// import { useLanguage } from '@/contexts/LanguageContext';
-
 import { useToast } from '@/components/ui/Toast';
 import { Dictionary } from '@/types/dictionary';
 import Button from '@/components/ui/Button';
@@ -23,19 +19,54 @@ export function ContactForm({ dict, isDe }: ContactFormProps) {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    toast({
-      title: isDe ? 'Nachricht gesendet!' : 'Message sent!',
-      description: isDe
-        ? 'Wir melden uns schnellstmöglich bei Ihnen.'
-        : "We'll get back to you as soon as possible.",
-      variant: 'success',
-    });
-
-    setIsSubmitting(false);
-    (e.target as HTMLFormElement).reset();
+    const form = e.target as HTMLFormElement;
+    const data = {
+      name: (form.querySelector('#name') as HTMLInputElement)?.value,
+      email: (form.querySelector('#email') as HTMLInputElement)?.value,
+      phone: (form.querySelector('#phone') as HTMLInputElement)?.value,
+      company: (form.querySelector('#company') as HTMLInputElement)?.value,
+      industry: (form.querySelector('#industry') as HTMLSelectElement)?.value,
+      message: (form.querySelector('#message') as HTMLTextAreaElement)?.value,
+      locale: isDe ? 'de' : 'en',
+    };
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        toast({
+          title: isDe ? 'Nachricht gesendet!' : 'Message sent!',
+          description: isDe
+            ? 'Wir melden uns schnellstmöglich bei Ihnen.'
+            : "We'll get back to you as soon as possible.",
+          variant: 'success',
+        });
+        form.reset();
+      } else {
+        const json = await res.json().catch(() => ({}));
+        toast({
+          title: isDe ? 'Fehler beim Senden' : 'Send failed',
+          description:
+            json?.error ||
+            (isDe
+              ? 'Bitte versuchen Sie es später erneut.'
+              : 'Please try again later.'),
+          variant: 'destructive',
+        });
+      }
+    } catch (err) {
+      toast({
+        title: isDe ? 'Fehler beim Senden' : 'Send failed',
+        description: isDe
+          ? 'Bitte versuchen Sie es später erneut.'
+          : 'Please try again later.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -95,7 +126,7 @@ export function ContactForm({ dict, isDe }: ContactFormProps) {
               id="phone"
               type="tel"
               className="h-12 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-              placeholder="+49 123 456 789"
+              placeholder="+49 (0) 152 260 88296"
             />
           </div>
           <div>

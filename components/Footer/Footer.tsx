@@ -62,20 +62,20 @@ const Footer = ({ locale, dict }: FooterProps) => {
                 <span>{dict.footer.location}</span>
               </div>
               <a
-                href="mailto:info@globusssolutions.de"
+                href="mailto:info@globussco.de"
                 className="focus-ring flex items-center gap-3 rounded text-primary-foreground/70 transition-colors hover:text-accent"
-                aria-label="Email us at info@globusssolutions.de"
+                aria-label="Email us at info@globussco.de"
               >
                 <Mail className="h-5 w-5 shrink-0" aria-hidden="true" />
-                <span>info@globusssolutions.de</span>
+                <span>info@globussco.de</span>
               </a>
               <a
-                href="tel:+49123456789"
+                href="tel:+4915226088296"
                 className="focus-ring flex items-center gap-3 rounded text-primary-foreground/70 transition-colors hover:text-accent"
-                aria-label="Call us at +49 123 456 789"
+                aria-label="Call us at +49 (0) 152 260 88296"
               >
                 <Phone className="h-5 w-5 shrink-0" aria-hidden="true" />
-                <span>+49 123 456 789</span>
+                <span>+49 (0) 152 260 88296</span>
               </a>
             </address>
           </div>
@@ -119,7 +119,7 @@ const Footer = ({ locale, dict }: FooterProps) => {
             <h4 className="mb-6 text-lg font-bold">{dict.footer.connect}</h4>
             <div className="mb-6 flex gap-4">
               <Link
-                href="#"
+                href="https://www.linkedin.com/in/globuss-solutions-2796813a1/"
                 aria-label="LinkedIn"
                 className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 transition-colors hover:bg-accent hover:text-accent-foreground"
               >
