@@ -57,6 +57,7 @@ export function ContactForm({ dict, isDe }: ContactFormProps) {
         });
       }
     } catch (err) {
+      console.error('Contact form error', err);
       toast({
         title: isDe ? 'Fehler beim Senden' : 'Send failed',
         description: isDe
