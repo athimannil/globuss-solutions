@@ -49,7 +49,7 @@ const Footer = ({ locale, dict }: FooterProps) => {
               <div>
                 <span className="text-lg font-bold">Globuss Solutions</span>
                 <span className="block text-xs leading-tight text-primary-foreground/70">
-                  & Co. GmbH • We run what others move
+                  We run what others can&apos;t
                 </span>
               </div>
             </Link>

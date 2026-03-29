@@ -102,7 +102,7 @@ export default function Header({ locale, dict }: HeaderProps) {
                 Globuss Solutions
               </span>
               <span className="block text-xs leading-tight text-muted-foreground">
-                & Co. GmbH • We run what others move
+                We run what others can&apos;t
               </span>
             </div>
           </Link>
