@@ -73,7 +73,7 @@ export default async function ContactPage({
     {
       icon: MapPin,
       title: dict.contact.address,
-      value: 'Berlin, Germany',
+      value: 'Böhlener Straße 1, 12627 Berlin, Germany',
     },
     {
       icon: Phone,
@@ -180,17 +180,17 @@ export default async function ContactPage({
                 </ul>
               </div>
 
-              {/* Map placeholder */}
+              {/* Business location map */}
               <div className="mt-10 flex h-64 items-center justify-center overflow-hidden rounded-xl bg-muted">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155422.0927254792!2d13.259738366253092!3d52.50651326442618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sus!4v1703000000000!5m2!1sen!2sus"
+                  src="https://maps.google.com/maps?q=Globuss%20Solutions%20%26%20Co.%20GmbH%4052.5463629%2C13.5524161&z=15&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Office Location"
+                  title="Globuss Solutions & Co. GmbH location"
                 />
               </div>
             </div>

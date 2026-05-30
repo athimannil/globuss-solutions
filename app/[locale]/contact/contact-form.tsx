@@ -6,6 +6,7 @@ import { Send } from 'lucide-react';
 import { useToast } from '@/components/ui/Toast';
 import { Dictionary } from '@/types/dictionary';
 import Button from '@/components/ui/Button';
+import Input from '@/components/ui/Input';
 
 interface ContactFormProps {
   dict: Dictionary;
@@ -83,67 +84,33 @@ export function ContactForm({ dict, isDe }: ContactFormProps) {
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid gap-4 sm:grid-cols-2">
-          <div>
-            <label
-              htmlFor="name"
-              className="mb-2 block text-sm font-medium text-foreground"
-            >
-              {dict.contact.name} *
-            </label>
-            <input
-              id="name"
-              type="text"
-              required
-              className="h-12 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-              placeholder="John Doe"
-            />
-          </div>
-          <div>
-            <label
-              htmlFor="email"
-              className="mb-2 block text-sm font-medium text-foreground"
-            >
-              {dict.contact.email} *
-            </label>
-            <input
-              id="email"
-              type="email"
-              required
-              className="h-12 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-              placeholder="john@company.com"
-            />
-          </div>
+          <Input
+            id="name"
+            label={dict.contact.name}
+            placeholder="John Doe"
+            required
+          />
+          <Input
+            id="email"
+            type="email"
+            label={dict.contact.email}
+            placeholder="john@company.com"
+            required
+          />
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
-          <div>
-            <label
-              htmlFor="phone"
-              className="mb-2 block text-sm font-medium text-foreground"
-            >
-              {dict.contact.phone}
-            </label>
-            <input
-              id="phone"
-              type="tel"
-              className="h-12 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-              placeholder="+49 (0) 152 260 88296"
-            />
-          </div>
-          <div>
-            <label
-              htmlFor="company"
-              className="mb-2 block text-sm font-medium text-foreground"
-            >
-              {dict.contact.company}
-            </label>
-            <input
-              id="company"
-              type="text"
-              className="h-12 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-              placeholder="Company GmbH"
-            />
-          </div>
+          <Input
+            id="phone"
+            type="tel"
+            label={dict.contact.phone}
+            placeholder="+49 (0) 152 260 88296"
+          />
+          <Input
+            id="company"
+            label={dict.contact.company}
+            placeholder="Company GmbH"
+          />
         </div>
 
         <div>
