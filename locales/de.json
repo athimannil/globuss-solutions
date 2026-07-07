@@ -1,19 +1,132 @@
 {
+  "brand": {
+    "tagline": "Vom Feld. Bis zu Ihrer Tür."
+  },
   "navigation": {
     "home": "Startseite",
-    "services": "Leistungen",
     "about": "Über uns",
+    "products": "Produkte",
     "contact": "Kontakt",
     "imprint": "Impressum",
-    "privacy": "Datenschutz"
+    "privacy": "Datenschutz",
+    "title": "Navigation"
   },
   "hero": {
-    "title": "Personallösungen, die Ihr Unternehmen voranbringen",
-    "subtitle": "Die Globuss Solutions & Co. GmbH bietet zuverlässige Personal- und Fachkräftelösungen für Unternehmen in Deutschland und Europa. Durch strukturierte Rekrutierung und rechtskonforme Personallösungen stellen wir sicher, dass Ihnen die richtigen Fachkräfte zur richtigen Zeit zur Verfügung stehen.",
+    "eyebrow": "Berlin · Direktes Beschaffungsnetzwerk",
+    "title": "Vom Feld. Bis zu Ihrer Tür.",
+    "subtitle": "Globuss Solutions baut direkte Beziehungen zu Erzeugern in Asien und Nordafrika auf. Jede Lieferung wird in unserer Berliner Anlage nach strengen deutschen und EU-Qualitätsstandards geprüft, im Labor getestet und verpackt — entwickelt für Supermärkte, Großhändler und Distributoren, die eine rückverfolgbare, verlässliche Versorgung brauchen.",
     "cta": {
       "primary": "Personal anfragen",
-      "secondary": "Mehr erfahren"
+      "secondary": "Produktpalette ansehen"
+    },
+    "badge": {
+      "regions": "7 Beschaffungsregionen",
+      "quality": "Deutsche Qualitätskontrolle"
     }
+  },
+  "intro": {
+    "eyebrow": "Für Einkäufer entwickelt",
+    "title": "Eine Lieferkette, die durch jeden Zoll geht",
+    "body": "Jede Sendung ist von der Herkunft bis zur Auslieferung dokumentiert — Pflanzengesundheitszeugnisse, Analysezertifikate und vollständige Rückverfolgbarkeit bis zur Ursprungsregion. Wir beschaffen ausschließlich aus Ländern, die für den Export in die EU zugelassen sind, und wickeln jede Lieferung nach den jeweils geltenden EU-Kontrollanforderungen ab."
+  },
+  "pillar": {
+    "sourcing": {
+      "tag": "Beschaffung",
+      "title": "Direkt von den Erzeugern",
+      "desc": "Wir arbeiten direkt mit landwirtschaftlichen Betrieben in Süd- und Südostasien sowie Nordafrika — nicht mit Rohstoffmaklern — um gleichbleibende Qualität und faire, stabile Preise zu sichern."
+    },
+    "berlin": {
+      "tag": "Berlin",
+      "title": "Deutsche Qualitätskontrolle",
+      "desc": "Jede Charge wird vor dem Verpacken in Berlin geprüft und im Labor getestet — Feuchtigkeit, Reinheit und Kontaminationsprüfung — nach den Anforderungen der deutschen und EU-Lebensmittelsicherheitsvorschriften."
+    },
+    "logistics": {
+      "tag": "Logistik",
+      "title": "Für den Export gemacht",
+      "desc": "Handelsrechnungen, Packlisten und Ursprungszeugnisse werden nach dem Standard vorbereitet, den Speditionen und Zollagenten erwarten — ohne Nachfragen."
+    },
+    "markets": {
+      "tag": "Märkte",
+      "title": "EU · USA · Naher Osten",
+      "desc": "Unsere Handelsdokumente und Preisstrukturen sind von Anfang an so aufgebaut, dass sie den Importanforderungen von EU, USA und GCC entsprechen."
+    },
+    "scale": {
+      "tag": "Skalierung",
+      "title": "Großhandel zuerst",
+      "desc": "Wir sind auf B2B-Volumen ausgerichtet — Supermärkte, Großhändler und Foodservice-Distributoren — nicht auf Einzelhandel."
+    },
+    "trust": {
+      "tag": "Vertrauen",
+      "title": "Ein Ansprechpartner",
+      "desc": "Ein einziges Team übernimmt Beschaffung, Dokumentation und Lieferung — Sie jagen nie drei verschiedenen Parteien für eine Sendung hinterher."
+    }
+  },
+  "quality": {
+    "eyebrow": "Verpackt & qualitätsgeprüft in Berlin",
+    "title": "Was „deutsche Qualitätskontrolle\" tatsächlich bedeutet",
+    "body": "Rohgewürze kommen in Berlin an und durchlaufen einen strengen Qualitätsprozess, bevor auch nur ein Beutel etikettiert wird — das ist der Standard, auf dem wir das Geschäft aufbauen, kein Slogan auf einem Etikett.",
+    "stat1.value": "100%",
+    "stat1.label": "Chargen im Labor getestet",
+    "stat2.value": "EU",
+    "stat2.label": "852/2004 Hygienestandard",
+    "inspection": {
+      "title": "Wareneingangskontrolle",
+      "desc": "Jede Charge wird bei Ankunft auf Feuchtigkeit, sichtbare Verunreinigungen und physischen Zustand geprüft, bevor sie ins Lager übernommen wird."
+    },
+    "lab": {
+      "title": "Laborprüfung",
+      "desc": "Proben werden auf Reinheit, Pestizidrückstände und mikrobielle Belastung getestet, die Ergebnisse werden im Analysezertifikat der jeweiligen Charge festgehalten."
+    },
+    "packing": {
+      "title": "Hygienische Verpackung",
+      "desc": "Die Verpackung erfolgt gemäß EU-Lebensmittelhygieneverordnung (EG 852/2004), mit Metalldetektion und Reinraumhandhabung vor der Versiegelung."
+    },
+    "trace": {
+      "title": "Vollständige Rückverfolgbarkeit",
+      "desc": "Jedes Etikett trägt eine Chargenreferenz zurück zur Anbauregion — Herkunftsehrlichkeit neben deutschen Verarbeitungsstandards, nicht statt ihnen."
+    }
+  },
+  "process": {
+    "eyebrow": "So läuft es",
+    "title": "Vom Feld bis zur Tür, in vier Etappen",
+    "step1": {
+      "tag": "Ursprung",
+      "title": "Direkt vom Erzeuger",
+      "desc": "Rohgewürze und Agrarwaren direkt von Erzeugern in Asien und Nordafrika bezogen."
+    },
+    "step2": {
+      "tag": "Berlin",
+      "title": "Labor & Verpackung",
+      "desc": "Waren werden in unserer Berliner Anlage nach deutschen Hygienestandards angenommen, im Labor getestet und verpackt."
+    },
+    "step3": {
+      "tag": "Dokumentation",
+      "title": "Bereit für den Export",
+      "desc": "Vollständige Handelsdokumente für EU-, US- und Nahost-Importanforderungen erstellt."
+    },
+    "step4": {
+      "tag": "Lieferung",
+      "title": "Zu Ihrer Tür",
+      "desc": "Geliefert an Supermärkte, Großhändler und Distributoren auf drei Kontinenten."
+    }
+  },
+  "coming": {
+    "eyebrow": "Bald verfügbar · Eigene Produktion",
+    "title": "Über Gewürze hinaus wachsen",
+    "body": "Wir bauen eine eigene Produktionslinie für Pickles und Trinkwasser in Flaschen auf — kein umetikettiertes Drittprodukt, sondern eine von Globuss hergestellte Linie, verpackt in biologisch abbaubaren Materialien und aufgebaut auf denselben Direktbeschaffungsprinzipien wie unser Gewürzsortiment. Details und Verfügbarkeit werden zum Launch bekanntgegeben.",
+    "stat1": {
+      "value": "7",
+      "label": "Beschaffungsregionen"
+    },
+    "stat2": {
+      "value": "3",
+      "label": "Exportmärkte"
+    }
+  },
+  "cta": {
+    "title": "Beschaffung für Ihre Regale, Küchen oder Ihre Eigenmarke?",
+    "subtitle": "Nennen Sie uns Ihre Volumen und Märkte — wir stellen einen Beschaffungs- und Preisvorschlag zusammen, der auf Ihr Geschäft zugeschnitten ist.",
+    "button": "Gespräch starten"
   },
   "stats": {
     "years": "Jahre Erfahrung",
@@ -22,113 +135,104 @@
     "countries": "Länder bedient"
   },
   "about": {
-    "title": "Über uns",
-    "subtitle": "Ihr vertrauenswürdiger Personalpartner",
-    "description": "Die Globuss Solutions & Co. GmbH ist ein in Berlin ansässiger Anbieter von Personallösungen und Workforce-Dienstleistungen. Wir sind spezialisiert auf Personalvermittlung, Rekrutierung sowie flexible Personaleinsatzmodelle und unterstützen Unternehmen in Pflege, Industrie, Logistik und Dienstleistung.",
-    "mission": "Unser Ziel ist der Aufbau nachhaltiger und verlässlicher Personalpartnerschaften.",
-    "history.title": "Unsere Geschichte",
-    "history.description": "Gegründet mit der Vision, qualifizierte Fachkräfte mit Unternehmen zu verbinden, hat sich Globuss Solutions von einer kleinen Personalvermittlung zu einem umfassenden Anbieter von Workforce-Lösungen entwickelt. Unser Weg ist geprägt von kontinuierlicher Verbesserung, Innovation und einem unerschütterlichen Engagement für Qualität.",
-    "team.title": "Unser Team",
-    "team.description": "Unser Team besteht aus erfahrenen HR-Experten, Branchenspezialisten und engagiertem Support-Personal, die gemeinsam erstklassige Personallösungen liefern. Jedes Teammitglied bringt einzigartige Expertise und ein gemeinsames Engagement für den Kundenerfolg mit.",
-    "values.title": "Unsere Werte"
+    "eyebrow": "Über Globuss",
+    "title": "Auf direkten Beziehungen aufgebaut, nicht auf Zwischenhändlern",
+    "intro": "Die Globuss Solutions & Co. GmbH ist ein in Berlin ansässiges Handelsunternehmen, das auf einer Idee aufbaut: dem kürzestmöglichen Weg zwischen dem Bauern, der etwas anbaut, und dem Unternehmen, das es verkauft.",
+    "story": {
+      "eyebrow": "Unsere Geschichte",
+      "title": "Warum es uns gibt",
+      "part1": "Die meisten Gewürze und Agrarwaren wechseln zwischen dem Feld und dem Regal vier- oder fünfmal den Besitzer — jeder Schritt verursacht Kosten, verringert Rückverfolgbarkeit und verwässert die Qualitätskontrolle.",
+      "part2": "Globuss Solutions wird aufgebaut, um diese Lücke zu schließen. Wir bauen direkte Beziehungen zu Erzeugern in Süd- und Südostasien sowie Nordafrika auf und errichten eine Berliner Basis, in der jede Lieferung nach strengen deutschen und EU-Lebensmittelsicherheitsstandards geprüft, getestet und verpackt wird, bevor sie an Einkäufer in Europa, den USA und dem Nahen Osten weitergeht.",
+      "part3": "Wir sind ehrlich darüber, wo jedes Gewürz angebaut wird — und ebenso konsequent bei dem Verarbeitungsstandard, den es bei uns durchläuft. Diese Kombination — Herkunftstransparenz plus deutsche Qualitätskontrolle — ist der eigentliche Zweck.",
+      "note": "Wir sind ein junges Unternehmen. Wir sagen das lieber offen, als zu übertreiben — was wir versprechen können, ist Transparenz in jeder Beziehung, die wir aufbauen, angefangen bei dieser."
+    },
+    "principles": {
+      "eyebrow": "Wofür wir stehen",
+      "title": "Die Prinzipien hinter jeder Lieferung",
+      "part1": {
+        "title": "Rückverfolgbarkeit",
+        "desc": "Jede Bestellung ist bis zur Ursprungsregion nachvollziehbar, mit den entsprechenden Zertifikaten — nicht nur einem Herkunftslandaufkleber."
+      },
+      "part2": {
+        "title": "Deutsche Qualitätskontrolle",
+        "desc": "Labortests, hygienische Verpackung und Metalldetektion in unserer Berliner Anlage, nach EU-Lebensmittelhygieneverordnung EG 852/2004 — derselbe Verarbeitungsstandard, den Einkäufer von etablierten deutschen Verarbeitern erwarten."
+      },
+      "part3": {
+        "title": "Faire Beschaffung",
+        "desc": "Direkt mit Erzeugern zu arbeiten bedeutet, Zwischenhändler auszuschließen — bessere Margen für die Betriebe und bessere Preise für unsere Einkäufer."
+      },
+      "part4": {
+        "title": "Dokumentationsdisziplin",
+        "desc": "Handelsrechnungen, Packlisten und Zertifikate beim ersten Mal richtig erstellt, nach dem Standard, den Zollagenten und Speditionen erwarten."
+      },
+      "part5": {
+        "title": "Für Skalierung gebaut",
+        "desc": "Von Tag eins auf Großhandels- und B2B-Volumen ausgerichtet, nicht auf Einzelhandel — denn genau dafür sind wir gebaut."
+      }
+    },
+    "based": {
+      "eyebrow": "Wo wir ansässig sind",
+      "title": "Berlin, mit Absicht",
+      "body": "Deutschlands Ruf für regulatorische Strenge und Logistikinfrastruktur macht es zur natürlichen Basis für ein Unternehmen, das auf den Export in die EU, USA und den Nahen Osten ausgerichtet ist. Jede Charge wird hier nach deutschen und EU-Lebensmittelsicherheitsstandards geprüft und verpackt — während das Gewürz selbst ehrlich mit seiner tatsächlichen Anbauregion gekennzeichnet bleibt."
+    },
+    "company": {
+      "label": "Unternehmen",
+      "value": "Globuss Solutions & Co. GmbH"
+    },
+    "office": {
+      "label": "Sitz",
+      "value": "Böhlener Straße 1, 12627 Berlin"
+    },
+    "hr": {
+      "label": "Handelsregister",
+      "value": "HRB 285003 B"
+    },
+    "vat": {
+      "label": "USt-IdNr.",
+      "value": "DE462214910"
+    },
+    "activity": {
+      "label": "Kerngeschäft",
+      "value": "Lebensmittelimport, -verarbeitung & -export"
+    },
+    "also": {
+      "label": "Auch tätig in",
+      "value": "Personalvermittlung, Logistik, Handel"
+    },
+    "sourcing": {
+      "note": "Zur Beschaffung: Es gibt keine einzelne „Positivliste\" zugelassener Länder für Gewürzimporte in die EU. Stattdessen wird jede Sendung anhand der aktuellen EU-Lebensmittelsicherheits-Kontrollanforderungen (Verordnung (EU) 2019/1793 und verwandte Vorschriften) geprüft, die je nach Produkt und Ursprung variieren und alle sechs Monate aktualisiert werden. Wir beschaffen ausschließlich aus Ländern, die für den EU-Export zugelassen sind, und richten unsere Dokumentation nach dem jeweils geltenden Kontrollniveau aus."
+    }
   },
-  "services": {
-    "title": "Unsere Leistungen",
-    "subtitle": "Umfassende Personallösungen",
-    "intro": "Wir bieten ein vollständiges Spektrum an Personallösungen, die auf die vielfältigen Bedürfnisse moderner Unternehmen zugeschnitten sind. Von der Zeitarbeit bis zur Festanstellung sind unsere Dienstleistungen auf Ihre spezifischen Anforderungen abgestimmt.",
-    "manpower.title": "Bereitstellung von Fachkräften",
-    "manpower.description": "Qualifiziertes Personal nach Ihrem Bedarf",
-    "manpower.details": "Wir beschaffen und stellen qualifizierte Fachkräfte bereit, die auf Ihre spezifischen betrieblichen Anforderungen zugeschnitten sind. Unser strenger Prüfprozess stellt sicher, dass Sie einsatzbereite Mitarbeiter erhalten.",
-    "recruitment.title": "Personalvermittlung & Rekrutierung",
-    "recruitment.description": "Passgenaue Besetzung offener Stellen",
-    "recruitment.details": "Unsere Rekrutierungsspezialisten identifizieren, prüfen und vermitteln Kandidaten für Ihre offenen Positionen. Wir übernehmen den gesamten Einstellungsprozess.",
-    "staffing.title": "Temporäre & Langfristige Lösungen",
-    "staffing.description": "Flexibel und skalierbar",
-    "staffing.details": "Ob temporäre Mitarbeiter für saisonale Spitzen oder Festangestellte für Wachstum – unsere flexiblen Personallösungen skalieren mit Ihrem Unternehmen.",
-    "compliance.title": "Rechtskonforme Modelle",
-    "compliance.description": "Einhaltung aller gesetzlichen Vorgaben",
-    "compliance.details": "Alle unsere Personallösungen entsprechen dem deutschen Arbeitsrecht, EU-Vorschriften und branchenspezifischen Anforderungen.",
-    "consulting.title": "HR-Beratung",
-    "consulting.description": "Strategische Personalplanung und -optimierung",
-    "consulting.details": "Über die Vermittlung hinaus bieten wir strategische HR-Beratung zur Optimierung Ihrer Personalstruktur und Mitarbeiterbindung.",
-    "training.title": "Schulung & Entwicklung",
-    "training.description": "Weiterbildung für Ihren Erfolg",
-    "training.details": "Wir bieten Schulungsprogramme, um sicherzustellen, dass vermittelte Fachkräfte Ihre Anforderungen erfüllen."
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Sprechen wir über Volumen",
+    "intro": "Ob Sie für ein Supermarktregal, eine Eigenmarke oder den Foodservice-Bereich einkaufen — sagen Sie uns, was Sie brauchen, und wir kommen mit einem Vorschlag zurück.",
+    "form": {
+      "name": "Vollständiger Name",
+      "company": "Firmenname",
+      "phone": "Telefonnummer",
+      "email": "E-Mail-Adresse",
+      "message": "Nachricht",
+      "submit": "Anfrage senden"
+    },
+    "sent": {
+      "title": "Anfrage gesendet",
+      "desc": "Danke — wir melden uns in Kürze bei Ihnen."
+    },
+    "info": {
+      "company": "Unternehmen",
+      "office": "Sitz",
+      "hr": "Handelsregister",
+      "vat": "USt-IdNr.",
+      "markets": "Bediente Märkte",
+      "value": "Europäische Union, USA, Naher Osten / GCC",
+      "email": "E-Mail"
+    }
   },
-  "industries": {
-    "title": "Branchen",
-    "subtitle": "Spezialisierte Lösungen für jeden Sektor",
-    "aerospace": "Luft- & Raumfahrt und Verteidigung",
-    "aerospace.desc": "Luftfahrtspezialisten, Verteidigungsingenieure, Luft- und Raumfahrttechniker und Sicherheitsexperten",
-    "energy": "Energie und erneuerbare Ressourcen",
-    "energy.desc": "Energieingenieure, Spezialisten für erneuerbare Energien, Kraftwerksbetreiber und Nachhaltigkeitsexperten",
-    "automotive": "Automobilindustrie",
-    "automotive.desc": "Automobilingenieure, Produktionsspezialisten, Qualitätskontrollexperten und Supply-Chain-Manager",
-    "telecom": "Telekommunikation",
-    "telecom.desc": "Netzwerkingenieure, Telekommunikationstechniker, Infrastrukturspezialisten und Kommunikationsexperten",
-    "education": "Bildung",
-    "education.desc": "Akademische Fachkräfte, Trainer, Lehrplanentwickler und Bildungsadministratoren",
-    "electronics": "Elektronik, IT-Software & Produktentwicklungszentrum",
-    "electronics.desc": "Softwareentwickler, Elektronikingenieure, Produktdesigner und F&E-Spezialisten",
-    "network": "Netzwerk- und Sicherheitslösungen",
-    "network.desc": "Cybersicherheitsexperten, Netzwerkadministratoren, Sicherheitsanalysten und IT-Infrastrukturspezialisten",
-    "lifescience": "Life Science, Gesundheitswesen, wissenschaftliche F&E",
-    "lifescience.desc": "Forschungswissenschaftler, Gesundheitsfachkräfte, Labortechniker und klinische Spezialisten"
-  },
-  "why": {
-    "title": "Warum Globuss Solutions",
-    "subtitle": "Was uns auszeichnet",
-    "reliability": "Zuverlässigkeit",
-    "reliability.desc": "Verlässliche Personallösungen, auf die Sie zählen können – pünktlich, jedes Mal",
-    "compliance": "Rechtskonformität",
-    "compliance.desc": "Volle Einhaltung des deutschen Arbeitsrechts, der EU-Vorschriften und Branchenstandards",
-    "quality": "Qualitätskräfte",
-    "quality.desc": "Geprüfte, qualifizierte Fachkräfte, sofort einsatzbereit",
-    "flexibility": "Flexibilität",
-    "flexibility.desc": "Skalierbare Lösungen, die sich Ihren Geschäftsanforderungen anpassen",
-    "support": "24/7 Support",
-    "support.desc": "Rund-um-die-Uhr-Unterstützung für alle Ihre Personalanliegen",
-    "cost": "Kosteneffizienz",
-    "cost.desc": "Wettbewerbsfähige Preise ohne Kompromisse bei der Qualität"
-  },
-  "process": {
-    "title": "Unser Prozess",
-    "subtitle": "Wie wir arbeiten",
-    "step1.title": "Beratung",
-    "step1.desc": "Wir beginnen mit einem gründlichen Verständnis Ihrer Personalanforderungen und Unternehmenskultur.",
-    "step2.title": "Kandidatensuche",
-    "step2.desc": "Unser Team identifiziert und prüft qualifizierte Kandidaten aus unserem Netzwerk.",
-    "step3.title": "Auswahl & Matching",
-    "step3.desc": "Wir präsentieren die bestgeeigneten Kandidaten und ermöglichen Vorstellungsgespräche.",
-    "step4.title": "Onboarding & Support",
-    "step4.desc": "Wir übernehmen die Dokumentation und bieten kontinuierliche Unterstützung."
-  },
+
   "testimonials": {
     "title": "Was unsere Kunden sagen",
     "subtitle": "Erfolgsgeschichten"
-  },
-  "contact": {
-    "title": "Kontakt",
-    "subtitle": "Bereit, Ihre Personalanforderungen zu besprechen?",
-    "intro": "Ob Sie einen spezifischen Personalbedarf haben oder mehr über unsere Dienstleistungen erfahren möchten – wir sind für Sie da. Kontaktieren Sie uns und lassen Sie uns besprechen, wie wir Ihr Unternehmenswachstum unterstützen können.",
-    "name": "Ihr Name",
-    "email": "E-Mail-Adresse",
-    "phone": "Telefonnummer",
-    "company": "Firmenname",
-    "industry": "Branche",
-    "message": "Ihre Nachricht",
-    "submit": "Anfrage senden",
-    "address": "Adresse",
-    "hours": "Öffnungszeiten"
-  },
-  "cta": {
-    "title": "Bereit, Ihr ideales Team aufzubauen?",
-    "subtitle": "Kontaktieren Sie uns noch heute und entdecken Sie, wie Globuss Solutions Ihre Personalherausforderungen in Chancen verwandeln kann.",
-    "button": "Jetzt starten"
-  },
-  "partners": {
-    "title": "Unsere Partner",
-    "subtitle": "Unternehmen, mit denen wir zusammengearbeitet haben"
   },
   "footer": {
     "description": "Personallösungen & Fachkräftevermittlung",
@@ -137,6 +241,12 @@
     "services": "Leistungen",
     "company": "Unternehmen",
     "legal": "Rechtliches",
-    "connect": "Verbinden Sie sich"
+    "connect": "Verbinden Sie sich",
+    "markets": {
+      "title": "Märkte",
+      "eu": "Europäische Union",
+      "us": "Vereinigte Staaten",
+      "me": "Naher Osten / GCC"
+    }
   }
 }

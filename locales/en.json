@@ -1,19 +1,132 @@
 {
+  "brand": {
+    "tagline": "We run what others can't"
+  },
   "navigation": {
     "home": "Home",
-    "services": "Services",
-    "about": "About Us",
+    "about": "About",
+    "products": "Products",
     "contact": "Contact",
     "imprint": "Imprint",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "title": "Navigate"
   },
   "hero": {
-    "title": "Workforce Solutions That Help Your Business Succeed",
-    "subtitle": "Globuss Solutions & Co. GmbH provides reliable manpower and skilled workforce solutions to companies across Germany and Europe. Through structured recruitment and compliant staffing models, we ensure you have the right professionals at the right time.",
+    "eyebrow": "Berlin · Direct sourcing network",
+    "title": "From the Farm. To Your Door.",
+    "subtitle": "Globuss Solutions builds direct relationships with growers across Asia and North Africa, then every shipment is inspected, lab-tested, and packed at our Berlin facility to strict German and EU quality standards — built for supermarkets, wholesalers, and distributors who need traceable, reliable supply.",
     "cta": {
-      "primary": "Request Workforce Support",
-      "secondary": "Learn More"
+      "primary": "Request Wholesale Pricing",
+      "secondary": "View Product Range"
+    },
+    "badge": {
+      "regions": "7 Sourcing Regions",
+      "quality": "German Quality Control"
     }
+  },
+  "intro": {
+    "eyebrow": "Built for buyers",
+    "title": "A supply chain you can put on a customs form",
+    "body": "Every shipment is documented from origin to delivery — phytosanitary certificates, certificates of analysis, and full traceability back to the source region. We source only from countries permitted to export to the EU, and every shipment is handled under whichever EU control requirements currently apply to that product and origin."
+  },
+  "pillar": {
+    "sourcing": {
+      "tag": "Sourcing",
+      "title": "Direct from growers",
+      "desc": "We work directly with farming communities across South and Southeast Asia and North Africa — not commodity brokers — to secure consistent quality and fair, stable pricing."
+    },
+    "berlin": {
+      "tag": "Berlin",
+      "title": "German quality control",
+      "desc": "Every batch is inspected and lab-tested in Berlin before packing — moisture content, purity, and contaminant screening — to the standard German and EU food-safety regulation demands."
+    },
+    "logistics": {
+      "tag": "Logistics",
+      "title": "Built for export",
+      "desc": "Commercial invoices, packing lists, and certificates of origin are prepared to the standard freight forwarders and customs brokers expect — no back-and-forth."
+    },
+    "markets": {
+      "tag": "Markets",
+      "title": "EU · US · Middle East",
+      "desc": "Our trade documentation and pricing structures are built to move across EU, US, and GCC import requirements from the outset."
+    },
+    "scale": {
+      "tag": "Scale",
+      "title": "Wholesale-first",
+      "desc": "We're structured around B2B volumes — supermarkets, wholesalers, and food-service distributors — not single-unit retail."
+    },
+    "trust": {
+      "tag": "Trust",
+      "title": "One point of contact",
+      "desc": "A single team handles sourcing, documentation, and delivery — so you're never chasing three different parties for one shipment."
+    }
+  },
+  "quality": {
+    "eyebrow": "Packed & quality-checked in Berlin",
+    "title": "What \"German quality control\" actually means",
+    "body": "Raw spices arrive in Berlin and pass through a strict quality process before a single bag is labeled — this is the standard we're building the business around, not a slogan on a label.",
+    "stat1.value": "100%",
+    "stat1.label": "Batches lab-tested",
+    "stat2.value": "EU",
+    "stat2.label": "852/2004 hygiene standard",
+    "inspection": {
+      "title": "Incoming inspection",
+      "desc": "Every batch is checked on arrival for moisture content, visible contamination, and physical condition before it's accepted into stock."
+    },
+    "lab": {
+      "title": "Laboratory testing",
+      "desc": "Samples are tested for purity, pesticide residue, and microbial load, with results recorded against each batch's Certificate of Analysis."
+    },
+    "packing": {
+      "title": "Hygienic packing",
+      "desc": "Packing follows EU food hygiene regulation (EC 852/2004), with metal detection and clean-room handling ahead of sealing."
+    },
+    "trace": {
+      "title": "Full traceability",
+      "desc": "Every label carries a batch reference back to the growing region — origin honesty alongside German handling standards, not instead of it."
+    }
+  },
+  "process": {
+    "eyebrow": "How it moves",
+    "title": "Farm to door, in four stages",
+    "step1": {
+      "tag": "Origin",
+      "title": "Sourced at the farm",
+      "desc": "Raw spices and agricultural goods sourced directly from growers across Asia and North Africa."
+    },
+    "step2": {
+      "tag": "Berlin",
+      "title": "Lab-tested & packed",
+      "desc": "Goods are received, lab-tested, and packed under German hygiene standards at our Berlin facility."
+    },
+    "step3": {
+      "tag": "Documentation",
+      "title": "Cleared for export",
+      "desc": "Full trade documentation prepared for EU, US, and Middle East import requirements."
+    },
+    "step4": {
+      "tag": "Delivery",
+      "title": "To your door",
+      "desc": "Delivered to supermarkets, wholesalers, and distributors across three continents."
+    }
+  },
+  "coming": {
+    "eyebrow": "Coming soon · Own production",
+    "title": "Expanding beyond spices",
+    "body": "We're building our own production line for pickles and bottled water — not a relabeled third-party product, but a Globuss-made line packaged in biodegradable materials and built on the same direct-sourcing principles as our spice range. Details and availability will be announced as we move toward launch.",
+    "stat1": {
+      "value": "7",
+      "label": "Sourcing regions"
+    },
+    "stat2": {
+      "value": "3",
+      "label": "Export markets"
+    }
+  },
+  "cta": {
+    "title": "Sourcing for your shelves, your kitchens, or your private label?",
+    "subtitle": "Tell us your volumes and markets — we'll put together a sourcing and pricing proposal built around your business.",
+    "button": "Start a Conversation"
   },
   "stats": {
     "years": "Years Experience",
@@ -22,113 +135,104 @@
     "countries": "Countries Served"
   },
   "about": {
-    "title": "About Us",
-    "subtitle": "Your Trusted Workforce Partner",
-    "description": "Globuss Solutions & Co. GmbH is a Berlin-based manpower and workforce services provider specializing in recruitment, personnel placement, and flexible staffing solutions. We support businesses in healthcare, industrial, logistics, and service sectors with qualified, job-ready professionals, delivered in full compliance with labor and regulatory requirements.",
-    "mission": "Our goal is to build long-term workforce partnerships that enable sustainable business growth.",
-    "history.title": "Our History",
-    "history.description": "Founded with a vision to bridge the gap between skilled professionals and businesses in need, Globuss Solutions has grown from a small recruitment agency to a comprehensive workforce solutions provider. Our journey has been marked by continuous improvement, innovation, and an unwavering commitment to quality.",
-    "team.title": "Our Team",
-    "team.description": "Our team consists of experienced HR professionals, industry specialists, and dedicated support staff who work together to deliver exceptional workforce solutions. Each team member brings unique expertise and a shared commitment to client success.",
-    "values.title": "Our Values"
+    "eyebrow": "About Globuss",
+    "title": "Built on direct relationships, not middlemen",
+    "intro": "Globuss Solutions & Co. GmbH is a Berlin-based trading company built around one idea: the shortest possible distance between the farmer who grows something and the business that sells it.",
+    "story": {
+      "eyebrow": "Our story",
+      "title": "Why we exist",
+      "part1": "Most spices and agricultural goods change hands four or five times between the farm and the shelf — each step adding cost, removing traceability, and diluting quality control.",
+      "part2": "Globuss Solutions is being built to close that gap. We're establishing direct relationships with growers across South and Southeast Asia and North Africa, and building a Berlin base where every shipment is inspected, lab-tested, and packed under strict German and EU food-safety standards before it moves on to buyers across Europe, the United States, and the Middle East.",
+      "part3": "We're honest about where each spice is grown — and just as serious about the handling standard it passes through once it reaches us. That combination, origin transparency plus German quality control, is the whole point.",
+      "note": "We're a young company. We'd rather be straightforward about that than overstate where we are — what we can promise is transparency in every relationship we build, starting with this one."
+    },
+    "principles": {
+      "eyebrow": "What we stand for",
+      "title": "The principles behind every shipment",
+      "part1": {
+        "title": "Traceability",
+        "desc": "Every order can be traced back to its region of origin, with the certificates to prove it — not just a country-of-origin label."
+      },
+      "part2": {
+        "title": "German quality control",
+        "desc": "Lab testing, hygienic packing, and metal detection at our Berlin facility, to EU food hygiene regulation EC 852/2004 — the same handling standard buyers expect from established German processors."
+      },
+      "part3": {
+        "title": "Fair sourcing",
+        "desc": "Working directly with growers means cutting out layers of brokers — better margins for the farms we work with, and better pricing for our buyers."
+      },
+      "part4": {
+        "title": "Documentation discipline",
+        "desc": "Commercial invoices, packing lists, and certificates prepared right the first time, to the standard customs brokers and freight forwarders expect."
+      },
+      "part5": {
+        "title": "Built for scale",
+        "desc": "Structured from day one for wholesale and B2B volumes, not single-unit retail — because that's who we're built to serve."
+      }
+    },
+    "based": {
+      "eyebrow": "Where we're based",
+      "title": "Berlin, by design",
+      "body": "Germany's reputation for regulatory rigor and logistics infrastructure makes it the natural base for a company built around export to the EU, US, and Middle East. Every batch is inspected and packed here under German and EU food-safety standards — while the spice itself stays honestly labeled to its true growing region."
+    },
+    "company": {
+      "label": "Company",
+      "value": "Globuss Solutions & Co. GmbH"
+    },
+    "office": {
+      "label": "Registered office",
+      "value": "Böhlener Straße 1, 12627 Berlin"
+    },
+    "hr": {
+      "label": "Commercial register",
+      "value": "HRB 285003 B"
+    },
+    "vat": {
+      "label": "VAT ID",
+      "value": "DE462214910"
+    },
+    "activity": {
+      "label": "Core activity",
+      "value": "Food import, processing & export"
+    },
+    "also": {
+      "label": "Also active in",
+      "value": "Manpower supply, logistics, trading"
+    },
+    "sourcing": {
+      "note": "A note on sourcing: there is no single \"approved country\" whitelist for spice imports into the EU. Instead, every shipment is screened against current EU food-safety control requirements (Regulation (EU) 2019/1793 and related rules), which vary by product and origin and are updated every six months. We source only from countries permitted to export to the EU and build our documentation around whichever control level currently applies."
+    }
   },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "Comprehensive Workforce Solutions",
-    "intro": "We offer a full spectrum of workforce solutions designed to meet the diverse needs of modern businesses. From temporary staffing to permanent placement, our services are tailored to your specific requirements.",
-    "manpower.title": "Skilled Manpower Supply",
-    "manpower.description": "Qualified professionals tailored to your operational needs",
-    "manpower.details": "We source and deploy qualified professionals tailored to your specific operational requirements. Our rigorous vetting process ensures you receive skilled workers ready to contribute from day one. Whether you need specialists for a specific project or general workforce support, we deliver.",
-    "recruitment.title": "Recruitment & Personnel Placement",
-    "recruitment.description": "Right talent for the right role",
-    "recruitment.details": "Our recruitment specialists identify, screen, and match candidates to your open positions. We handle the entire hiring process from job posting to final placement, ensuring cultural fit and skill alignment.",
-    "staffing.title": "Temporary & Long-Term Staffing",
-    "staffing.description": "Flexible solutions for peak demand and continuity",
-    "staffing.details": "Whether you need temporary staff for seasonal peaks or permanent employees for growth, our flexible staffing solutions scale with your business needs. We manage contracts, payroll, and compliance.",
-    "compliance.title": "Compliance-Focused Solutions",
-    "compliance.description": "Aligned with legal and regulatory standards",
-    "compliance.details": "All our workforce solutions comply with German labor laws, EU regulations, and industry-specific requirements. We handle documentation, contracts, and regulatory compliance so you can focus on your core business.",
-    "consulting.title": "HR Consulting",
-    "consulting.description": "Strategic workforce planning and optimization",
-    "consulting.details": "Beyond placement, we offer strategic HR consulting to help you optimize your workforce structure, improve retention, and plan for future growth.",
-    "training.title": "Training & Development",
-    "training.description": "Upskilling your workforce for success",
-    "training.details": "We provide training programs to ensure placed professionals meet your specific requirements and continue to develop their skills throughout their engagement."
+  "contact": {
+    "eyebrow": "Get in Touch",
+    "title": "Let's talk volumes",
+    "intro": "Whether you're sourcing for a supermarket shelf, a private label line, or food-service supply — tell us what you need and we'll come back with a proposal.",
+    "form": {
+      "name": "Full name",
+      "company": "Company name",
+      "phone": "Phone number",
+      "email": "Email address",
+      "message": "Message",
+      "submit": "Send Inquiry"
+    },
+    "sent": {
+      "title": "Inquiry sent",
+      "desc": "Thanks — we'll get back to you shortly."
+    },
+    "info": {
+      "company": "Company",
+      "office": "Registered office",
+      "hr": "Commercial register",
+      "vat": "VAT ID",
+      "markets": "Markets served",
+      "value": "European Union, United States, Middle East / GCC",
+      "email": "Email"
+    }
   },
-  "industries": {
-    "title": "Industries We Serve",
-    "subtitle": "Specialized Solutions for Every Sector",
-    "aerospace": "Aerospace & Defence",
-    "aerospace.desc": "Aviation specialists, defense engineers, aerospace technicians, and security clearance professionals",
-    "energy": "Energy and Renewable Resources",
-    "energy.desc": "Energy engineers, renewable energy specialists, power plant operators, and sustainability experts",
-    "automotive": "Automotive",
-    "automotive.desc": "Automotive engineers, production specialists, quality control experts, and supply chain managers",
-    "telecom": "Telecom",
-    "telecom.desc": "Network engineers, telecom technicians, infrastructure specialists, and communications experts",
-    "education": "Education",
-    "education.desc": "Academic professionals, trainers, curriculum developers, and educational administrators",
-    "electronics": "Electronic, IT Software & Product Development Centre",
-    "electronics.desc": "Software developers, electronics engineers, product designers, and R&D specialists",
-    "network": "Network & Security Solutions",
-    "network.desc": "Cybersecurity experts, network administrators, security analysts, and IT infrastructure specialists",
-    "lifescience": "Life Science, Healthcare, Scientific R&D",
-    "lifescience.desc": "Research scientists, healthcare professionals, lab technicians, and clinical specialists"
-  },
-  "why": {
-    "title": "Why Globuss Solutions",
-    "subtitle": "What Sets Us Apart",
-    "reliability": "Reliability",
-    "reliability.desc": "Dependable workforce solutions you can count on, delivered on time every time",
-    "compliance": "Compliance",
-    "compliance.desc": "Full adherence to German labor laws, EU regulations, and industry standards",
-    "quality": "Quality Workforce",
-    "quality.desc": "Pre-vetted, skilled professionals ready to contribute from day one",
-    "flexibility": "Flexibility",
-    "flexibility.desc": "Scalable solutions that adapt to your changing business needs",
-    "support": "24/7 Support",
-    "support.desc": "Round-the-clock assistance for all your workforce concerns",
-    "cost": "Cost Efficiency",
-    "cost.desc": "Competitive pricing without compromising on quality"
-  },
-  "process": {
-    "title": "Our Process",
-    "subtitle": "How We Work",
-    "step1.title": "Consultation",
-    "step1.desc": "We begin with a thorough understanding of your workforce needs, company culture, and specific requirements.",
-    "step2.title": "Candidate Sourcing",
-    "step2.desc": "Our team identifies and screens qualified candidates from our extensive network and recruitment channels.",
-    "step3.title": "Selection & Matching",
-    "step3.desc": "We present the best-matched candidates and facilitate interviews to ensure the perfect fit.",
-    "step4.title": "Onboarding & Support",
-    "step4.desc": "We handle all documentation and provide ongoing support to ensure successful integration."
-  },
+
   "testimonials": {
     "title": "What Our Clients Say",
     "subtitle": "Success Stories"
-  },
-  "contact": {
-    "title": "Contact Us",
-    "subtitle": "Ready to discuss your workforce needs?",
-    "intro": "Whether you have a specific staffing requirement or want to learn more about our services, we are here to help. Reach out to us and let us discuss how we can support your business growth.",
-    "name": "Your Name",
-    "email": "Email Address",
-    "phone": "Phone Number",
-    "company": "Company Name",
-    "industry": "Industry",
-    "message": "Your Message",
-    "submit": "Send Inquiry",
-    "address": "Address",
-    "hours": "Business Hours"
-  },
-  "cta": {
-    "title": "Ready to Build Your Ideal Workforce?",
-    "subtitle": "Contact us today and discover how Globuss Solutions can transform your staffing challenges into opportunities.",
-    "button": "Get Started Today"
-  },
-  "partners": {
-    "title": "Our Partners",
-    "subtitle": "Companies We Have Worked With"
   },
   "footer": {
     "description": "Workforce & Skilled Manpower Solutions",
@@ -137,6 +241,12 @@
     "services": "Services",
     "company": "Company",
     "legal": "Legal",
-    "connect": "Connect With Us"
+    "connect": "Connect With Us",
+    "markets": {
+      "title": "Markets",
+      "eu": "European Union",
+      "us": "United States",
+      "me": "Middle East / GCC"
+    }
   }
 }

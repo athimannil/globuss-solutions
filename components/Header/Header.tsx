@@ -18,8 +18,8 @@ interface HeaderProps {
 
 const navItems = [
   { key: 'home', href: '/' },
-  { key: 'services', href: '/services' },
   { key: 'about', href: '/about' },
+  { key: 'products', href: '/products' },
   { key: 'contact', href: '/contact' },
 ] as const;
 
@@ -102,7 +102,7 @@ export default function Header({ locale, dict }: HeaderProps) {
                 Globuss Solutions
               </span>
               <span className="block text-xs leading-tight text-muted-foreground">
-                We run what others can&apos;t
+                {dict.brand.tagline}
               </span>
             </div>
           </Link>
@@ -113,15 +113,15 @@ export default function Header({ locale, dict }: HeaderProps) {
               <Link
                 key={item.key}
                 href={`/${locale}${item.href}`}
-                className={`relative py-2 font-medium transition-colors ${
+                className={`relative py-2 text-sm font-medium transition-colors ${
                   isActive(item.href)
-                    ? 'text-primary'
-                    : 'text-foreground hover:text-primary'
+                    ? 'text-accent'
+                    : 'text-foreground hover:text-accent'
                 }`}
               >
                 {dict.navigation?.[item.key]}
                 {isActive(item.href) && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 rounded-full bg-primary" />
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 rounded-full bg-accent" />
                 )}
               </Link>
             ))}
@@ -164,8 +164,8 @@ export default function Header({ locale, dict }: HeaderProps) {
                   onClick={() => setIsMenuOpen(false)}
                   className={`py-2 font-medium transition-colors ${
                     isActive(item.href)
-                      ? 'text-primary'
-                      : 'text-foreground hover:text-primary'
+                      ? 'text-accent'
+                      : 'text-foreground hover:text-accent'
                   }`}
                 >
                   {dict.navigation?.[item.key]}

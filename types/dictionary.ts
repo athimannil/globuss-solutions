@@ -1,140 +1,238 @@
 export interface Dictionary {
+  brand: {
+    tagline: string;
+  };
   navigation: {
     home: string;
-    services: string;
+    products: string;
     about: string;
     contact: string;
     imprint: string;
     privacy: string;
+    title: string;
   };
   hero: {
+    eyebrow: string;
     title: string;
     subtitle: string;
     cta: {
       primary: string;
       secondary: string;
     };
+    badge: {
+      regions: string;
+      quality: string;
+    };
   };
+  intro: {
+    eyebrow: string;
+    title: string;
+    body: string;
+  };
+  pillar: {
+    sourcing: {
+      tag: string;
+      title: string;
+      desc: string;
+    };
+    berlin: {
+      tag: string;
+      title: string;
+      desc: string;
+    };
+    logistics: {
+      tag: string;
+      title: string;
+      desc: string;
+    };
+    markets: {
+      tag: string;
+      title: string;
+      desc: string;
+    };
+    scale: {
+      tag: string;
+      title: string;
+      desc: string;
+    };
+    trust: {
+      tag: string;
+      title: string;
+      desc: string;
+    };
+  };
+  quality: {
+    eyebrow: string;
+    title: string;
+    body: string;
+    'stat1.value': string;
+    'stat1.label': string;
+    'stat2.value': string;
+    'stat2.label': string;
+    inspection: {
+      title: string;
+      desc: string;
+    };
+    lab: {
+      title: string;
+      desc: string;
+    };
+    packing: {
+      title: string;
+      desc: string;
+    };
+    trace: {
+      title: string;
+      desc: string;
+    };
+  };
+  process: {
+    eyebrow: string;
+    title: string;
+    step1: {
+      title: string;
+      desc: string;
+      tag: string;
+    };
+    step2: {
+      title: string;
+      desc: string;
+      tag: string;
+    };
+    step3: {
+      title: string;
+      desc: string;
+      tag: string;
+    };
+    step4: {
+      title: string;
+      desc: string;
+      tag: string;
+    };
+  };
+  coming: {
+    eyebrow: string;
+    title: string;
+    body: string;
+    stat1: {
+      value: string;
+      label: string;
+    };
+    stat2: {
+      value: string;
+      label: string;
+    };
+  };
+  about: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    story: {
+      eyebrow: string;
+      title: string;
+      part1: string;
+      part2: string;
+      part3: string;
+      note: string;
+    };
+    principles: {
+      eyebrow: string;
+      title: string;
+      part1: {
+        title: string;
+        desc: string;
+      };
+      part2: {
+        title: string;
+        desc: string;
+      };
+      part3: {
+        title: string;
+        desc: string;
+      };
+      part4: {
+        title: string;
+        desc: string;
+      };
+      part5: {
+        title: string;
+        desc: string;
+      };
+    };
+    based: {
+      eyebrow: string;
+      title: string;
+      body: string;
+    };
+    company: {
+      label: string;
+      value: string;
+    };
+    office: {
+      label: string;
+      value: string;
+    };
+    hr: {
+      label: string;
+      value: string;
+    };
+    vat: {
+      label: string;
+      value: string;
+    };
+    activity: {
+      label: string;
+      value: string;
+    };
+    also: {
+      label: string;
+      value: string;
+    };
+    sourcing: {
+      note: string;
+    };
+  };
+  contact: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    form: {
+      name: string;
+      company: string;
+      phone: string;
+      email: string;
+      message: string;
+      submit: string;
+    };
+    sent: {
+      title: string;
+      desc: string;
+    };
+    info: {
+      company: string;
+      office: string;
+      hr: string;
+      vat: string;
+      markets: string;
+      value: string;
+      email: string;
+    };
+  };
+
   stats: {
     years: string;
     clients: string;
     professionals: string;
     countries: string;
   };
-  about: {
-    title: string;
-    subtitle: string;
-    description: string;
-    mission: string;
-    'history.title': string;
-    'history.description': string;
-    'team.title': string;
-    'team.description': string;
-    'values.title': string;
-    [key: string]: string;
-  };
-  services: {
-    title: string;
-    subtitle: string;
-    intro: string;
-    'manpower.title': string;
-    'manpower.description': string;
-    'manpower.details': string;
-    'recruitment.title': string;
-    'recruitment.description': string;
-    'recruitment.details': string;
-    'staffing.title': string;
-    'staffing.description': string;
-    'staffing.details': string;
-    'compliance.title': string;
-    'compliance.description': string;
-    'compliance.details': string;
-    'consulting.title': string;
-    'consulting.description': string;
-    'consulting.details': string;
-    'training.title': string;
-    'training.description': string;
-    'training.details': string;
-    [key: string]: string;
-  };
-  industries: {
-    title: string;
-    subtitle: string;
-    aerospace: string;
-    'aerospace.desc': string;
-    energy: string;
-    'energy.desc': string;
-    automotive: string;
-    'automotive.desc': string;
-    telecom: string;
-    'telecom.desc': string;
-    education: string;
-    'education.desc': string;
-    electronics: string;
-    'electronics.desc': string;
-    network: string;
-    'network.desc': string;
-    lifescience: string;
-    'lifescience.desc': string;
-    [key: string]: string;
-  };
-  why: {
-    title: string;
-    subtitle: string;
-    reliability: string;
-    'reliability.desc': string;
-    compliance: string;
-    'compliance.desc': string;
-    quality: string;
-    'quality.desc': string;
-    flexibility: string;
-    'flexibility.desc': string;
-    support: string;
-    'support.desc': string;
-    cost: string;
-    'cost.desc': string;
-    [key: string]: string;
-  };
-  process: {
-    title: string;
-    subtitle: string;
-    'step1.title': string;
-    'step1.desc': string;
-    'step2.title': string;
-    'step2.desc': string;
-    'step3.title': string;
-    'step3.desc': string;
-    'step4.title': string;
-    'step4.desc': string;
-    [key: string]: string;
-  };
   testimonials: {
     title: string;
     subtitle: string;
-  };
-  contact: {
-    title: string;
-    subtitle: string;
-    intro: string;
-    name: string;
-    email: string;
-    phone: string;
-    company: string;
-    industry: string;
-    message: string;
-    submit: string;
-    address: string;
-    hours: string;
-    'hours.value': string;
   };
   cta: {
     title: string;
     subtitle: string;
     button: string;
-  };
-  partners: {
-    title: string;
-    subtitle: string;
   };
   footer: {
     description: string;
@@ -144,5 +242,11 @@ export interface Dictionary {
     company: string;
     legal: string;
     connect: string;
+    markets: {
+      title: string;
+      eu: string;
+      us: string;
+      me: string;
+    };
   };
 }

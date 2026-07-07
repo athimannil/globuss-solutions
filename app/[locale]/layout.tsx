@@ -51,7 +51,7 @@ export default async function LocaleLayout({
   const dict = await getDictionary(typedLocale);
 
   return (
-    <html lang={typedLocale}>
+    <html lang={typedLocale} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

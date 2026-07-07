@@ -75,7 +75,7 @@ export async function POST(req: Request) {
     return new Response(JSON.stringify({ ok: true, id: result.id || null }), {
       status: 200,
     });
-  } catch (err) {
+  } catch {
     return new Response(JSON.stringify({ error: 'Failed to send' }), {
       status: 500,
     });

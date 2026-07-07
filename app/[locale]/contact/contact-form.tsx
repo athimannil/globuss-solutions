@@ -86,14 +86,14 @@ export function ContactForm({ dict, isDe }: ContactFormProps) {
         <div className="grid gap-4 sm:grid-cols-2">
           <Input
             id="name"
-            label={dict.contact.name}
+            label={dict.contact.form.name}
             placeholder="John Doe"
             required
           />
           <Input
             id="email"
             type="email"
-            label={dict.contact.email}
+            label={dict.contact.form.email}
             placeholder="john@company.com"
             required
           />
@@ -103,39 +103,14 @@ export function ContactForm({ dict, isDe }: ContactFormProps) {
           <Input
             id="phone"
             type="tel"
-            label={dict.contact.phone}
+            label={dict.contact.form.phone}
             placeholder="+49 (0) 152 260 88296"
           />
           <Input
             id="company"
-            label={dict.contact.company}
+            label={dict.contact.form.company}
             placeholder="Company GmbH"
           />
-        </div>
-
-        <div>
-          <label
-            htmlFor="industry"
-            className="mb-2 block text-sm font-medium text-foreground"
-          >
-            {dict.contact.industry}
-          </label>
-          <select
-            id="industry"
-            className="flex h-12 w-full cursor-pointer appearance-none rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-            aria-describedby="industry-description"
-          >
-            <option value="">
-              {isDe ? 'Branche auswählen' : 'Select industry'}
-            </option>
-            <option value="aerospace">{dict.industries.aerospace}</option>
-            <option value="energy">{dict.industries.energy}</option>
-            <option value="automotive">{dict.industries.automotive}</option>
-            <option value="telecom">{dict.industries.telecom}</option>
-            <option value="electronics">{dict.industries.electronics}</option>
-            <option value="lifescience">{dict.industries.lifescience}</option>
-            <option value="other">{isDe ? 'Sonstiges' : 'Other'}</option>
-          </select>
         </div>
 
         <div>
@@ -143,7 +118,7 @@ export function ContactForm({ dict, isDe }: ContactFormProps) {
             htmlFor="message"
             className="mb-2 block text-sm font-medium text-foreground"
           >
-            {dict.contact.message} *
+            {dict.contact.form.message} *
           </label>
           <textarea
             id="message"
@@ -169,7 +144,7 @@ export function ContactForm({ dict, isDe }: ContactFormProps) {
             )
           ) : (
             <>
-              {dict.contact.submit}
+              {dict.contact.form.submit}
               <Send className="ml-2 h-4 w-4" />
             </>
           )}

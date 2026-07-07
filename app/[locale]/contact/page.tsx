@@ -1,13 +1,3 @@
-import {
-  MapPin,
-  Phone,
-  Mail,
-  // Send,
-  Clock,
-  Building2,
-  CheckCircle,
-} from 'lucide-react';
-
 import { ContactForm } from './contact-form';
 
 import { Toaster } from '@/components/ui/Toast';
@@ -65,138 +55,73 @@ export default async function ContactPage({
   const isDe = locale === 'de';
 
   const contactInfo = [
+    { label: dict.contact.info.company, value: 'Globuss Solutions & Co. GmbH' },
     {
-      icon: Building2,
-      title: isDe ? 'Firmenname' : 'Company',
-      value: 'Globuss Solutions & Co. GmbH',
-    },
-    {
-      icon: MapPin,
-      title: dict.contact.address,
+      label: dict.contact.info.office,
       value: 'Böhlener Straße 1, 12627 Berlin, Germany',
     },
+    { label: dict.contact.info.hr, value: 'HRB 285003 B' },
+    { label: dict.contact.info.vat, value: 'DE462214910' },
     {
-      icon: Phone,
-      title: isDe ? 'Telefon' : 'Phone',
-      value: '+49 (0) 152 260 88296',
-      href: 'tel:+4915226088296',
+      label: dict.contact.info.markets,
+      value: dict.contact.info.value,
     },
     {
-      icon: Mail,
-      title: 'Email',
-      value: 'info@globussco.de',
-      href: 'mailto:info@globussco.de',
-    },
-    {
-      icon: Clock,
-      title: dict.contact.hours,
-      value: 'Mon - Fri: 9:00 AM - 6:00 PM',
+      label: dict.contact.info.email,
+      value: 'info@globusssolutions.de',
+      href: 'mailto:info@globusssolutions.de',
     },
   ];
-
-  const benefits = isDe
-    ? [
-        'Schnelle Antwort innerhalb von 24 Stunden',
-        'Kostenlose Erstberatung',
-        'Maßgeschneiderte Lösungen',
-        'Persönlicher Ansprechpartner',
-      ]
-    : [
-        'Quick response within 24 hours',
-        'Free initial consultation',
-        'Tailored solutions',
-        'Dedicated contact person',
-      ];
 
   return (
     <>
       <Toaster />
-      <section className="gradient-hero pb-20 pt-32">
+      <section className="gradient-hero pb-20 pt-40">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
-            <span className="text-sm font-semibold uppercase tracking-wider text-accent">
-              {dict.contact.title}
+          <div className="max-w-4xl">
+            <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+              — {dict.contact.eyebrow}
             </span>
-            <h1 className="mb-6 mt-2 text-4xl font-bold text-primary-foreground md:text-5xl lg:text-6xl">
-              {dict.contact.subtitle}
+            <h1 className="mb-8 mt-4 font-serif text-4xl font-semibold leading-[1.05] text-primary-foreground md:text-6xl">
+              {dict.contact.title}
             </h1>
-            <p className="text-lg leading-relaxed text-primary-foreground/90 md:text-xl">
+            <p className="text-lg leading-relaxed text-primary-foreground/85 md:text-xl">
               {dict.contact.intro}
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Content */}
-      <section className="bg-background py-20">
+      <section className="bg-background py-24">
         <div className="container mx-auto px-4">
-          <div className="grid gap-16 lg:grid-cols-2">
-            {/* Contact Info */}
-            <div>
-              <h2 className="mb-8 text-3xl font-bold text-foreground">
-                {isDe ? 'Kontaktinformationen' : 'Contact Information'}
-              </h2>
-
-              <div className="mb-10 space-y-6">
-                {contactInfo.map((item, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10">
-                      <item.icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        {item.title}
-                      </h3>
-                      {item.href ? (
+          <div className="grid gap-16 lg:grid-cols-5">
+            <div className="lg:col-span-2">
+              <dl className="divide-y divide-border">
+                {contactInfo.map((d) => (
+                  <div key={d.label} className="py-5 first:pt-0">
+                    <dt className="mb-1.5 text-xs uppercase tracking-widest text-muted-foreground">
+                      {d.label}
+                    </dt>
+                    <dd className="font-serif text-lg text-foreground">
+                      {d.href ? (
                         <a
-                          href={item.href}
-                          className="text-muted-foreground transition-colors hover:text-accent"
+                          href={d.href}
+                          className="transition-colors hover:text-accent"
                         >
-                          {item.value}
+                          {d.value}
                         </a>
                       ) : (
-                        <p className="text-muted-foreground">{item.value}</p>
+                        d.value
                       )}
-                    </div>
+                    </dd>
                   </div>
                 ))}
-              </div>
-
-              {/* Benefits */}
-              <div className="rounded-xl bg-secondary p-6">
-                <h3 className="mb-4 font-bold text-foreground">
-                  {isDe ? 'Warum uns kontaktieren?' : 'Why Contact Us?'}
-                </h3>
-                <ul className="space-y-3">
-                  {benefits.map((benefit, index) => (
-                    <li
-                      key={index}
-                      className="flex items-center gap-3 text-muted-foreground"
-                    >
-                      <CheckCircle className="h-5 w-5 flex-shrink-0 text-accent" />
-                      <span>{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Business location map */}
-              <div className="mt-10 flex h-64 items-center justify-center overflow-hidden rounded-xl bg-muted">
-                <iframe
-                  src="https://maps.google.com/maps?q=Globuss%20Solutions%20%26%20Co.%20GmbH%4052.5463629%2C13.5524161&z=15&output=embed"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Globuss Solutions & Co. GmbH location"
-                />
-              </div>
+              </dl>
             </div>
 
-            {/* Contact Form */}
-            <ContactForm dict={dict} isDe={isDe} />
+            <div className="lg:col-span-3">
+              <ContactForm dict={dict} isDe={isDe} />
+            </div>
           </div>
         </div>
       </section>

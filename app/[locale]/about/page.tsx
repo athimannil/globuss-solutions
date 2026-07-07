@@ -1,17 +1,12 @@
-import {
-  CheckCircle,
-  Target,
-  Handshake,
-  ArrowRight,
-  Clock,
-  Shield,
-  Zap,
-} from 'lucide-react';
+import Image from 'next/image';
+import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/Button';
 import { getDictionary } from '@/lib/dictionary';
 import { Locale } from '@/lib/i18n.config';
+import flatlayImage from '@/assets/spices-flatlay.jpg';
+import storyImage from '@/assets/farm-origins.jpg';
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://globusssolutions.de';
@@ -58,101 +53,82 @@ export default async function AboutPage({
   const { locale } = await params;
   const dict = await getDictionary(locale);
 
-  const values = [
-    { icon: CheckCircle, key: 'reliability' },
-    { icon: Target, key: 'compliance' },
-    { icon: Handshake, key: 'quality' },
-    { icon: Zap, key: 'flexibility' },
-    { icon: Clock, key: 'support' },
-    { icon: Shield, key: 'cost' },
-  ];
-
-  const industries = [
-    'healthcare',
-    'industrial',
-    'logistics',
-    'facility',
-    'it',
-    'hospitality',
-  ];
+  const principles = ['part1', 'part2', 'part3', 'part4', 'part5'] as const;
+  const facts = ['company', 'office', 'hr', 'vat', 'activity', 'also'] as const;
 
   return (
     <>
-      {/* Hero */}
-      <section className="gradient-hero pb-20 pt-32">
+      <section className="gradient-hero pb-20 pt-40">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
-            <span className="text-sm font-semibold uppercase tracking-wider text-accent">
-              {dict.about.title}
+          <div className="max-w-4xl">
+            <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+              — {dict.about.eyebrow}
             </span>
-            <h1 className="mb-6 mt-2 text-4xl font-bold text-primary-foreground md:text-5xl lg:text-6xl">
-              {dict.about.subtitle}
+            <h1 className="mb-8 mt-4 font-serif text-4xl font-semibold leading-[1.05] text-primary-foreground md:text-6xl">
+              {dict.about.title}
             </h1>
-            <p className="text-lg leading-relaxed text-primary-foreground/90 md:text-xl">
-              {dict.about.description}
+            <p className="text-lg leading-relaxed text-primary-foreground/85 md:text-xl">
+              {dict.about.intro}
             </p>
           </div>
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      <section className="bg-background py-20">
+      <section className="bg-background py-24">
         <div className="container mx-auto px-4">
-          <div className="grid gap-16 lg:grid-cols-2">
+          <div className="grid items-start gap-16 lg:grid-cols-2">
             <div>
-              <h2 className="mb-6 text-3xl font-bold text-foreground">
-                {dict.about['history.title']}
+              <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+                — {dict.about.story.eyebrow}
+              </span>
+              <h2 className="mb-8 mt-4 font-serif text-3xl font-semibold leading-tight text-foreground md:text-4xl">
+                {dict.about.story.title}
               </h2>
-              <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-                {dict.about['history.description']}
-              </p>
-              <blockquote className="border-l-4 border-accent py-2 pl-6 text-lg font-medium italic text-foreground">
-                {dict.about.mission}
-              </blockquote>
+              <div className="aspect-[4/3] overflow-hidden rounded-2xl border border-border">
+                <Image
+                  src={storyImage}
+                  alt="Direct sourcing at origin"
+                  loading="lazy"
+                  width={1600}
+                  height={1000}
+                  className="h-full w-full object-cover"
+                />
+              </div>
             </div>
-
-            <div>
-              <h2 className="mb-6 text-3xl font-bold text-foreground">
-                {dict.about['team.title']}
-              </h2>
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                {dict.about['team.description']}
-              </p>
+            <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
+              <p>{dict.about.story.part1}</p>
+              <p>{dict.about.story.part2}</p>
+              <p>{dict.about.story.part3}</p>
+              <blockquote className="border-l-2 border-accent pl-6 font-serif text-xl italic text-foreground">
+                {dict.about.story.note}
+              </blockquote>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Us */}
-      <section className="bg-background py-20">
+      <section className="bg-secondary py-24">
         <div className="container mx-auto px-4">
-          <div className="mx-auto mb-12 max-w-3xl text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-accent">
-              {dict.why.title}
+          <div className="mb-16 max-w-3xl">
+            <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+              — {dict.about.principles.eyebrow}
             </span>
-            <h2 className="mb-4 mt-2 text-3xl font-bold text-foreground md:text-4xl">
-              {dict.why.subtitle}
+            <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight text-foreground md:text-5xl">
+              {dict.about.principles.title}
             </h2>
           </div>
-
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {values.map((value, index) => (
+            {principles.map((part, i) => (
               <article
-                key={value.key}
-                className="card-hover animate-fade-in group rounded-xl border border-border bg-card p-6 hover:border-primary/30"
-                style={{ animationDelay: `${index * 100}ms` }}
+                key={part}
+                className="card-hover animate-fade-in rounded-xl border border-border bg-background p-8"
+                style={{ animationDelay: `${i * 80}ms` }}
               >
-                <div
-                  className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 transition-all group-hover:scale-110 group-hover:bg-accent/20"
-                  aria-hidden="true"
-                >
-                  <value.icon className="h-6 w-6 text-accent" />
-                </div>
-                <h3 className="mb-2 text-lg font-bold text-foreground">
-                  {dict.why[value.key]}
+                <h3 className="mb-4 font-serif text-xl font-semibold text-foreground">
+                  {dict.about.principles[part].title}
                 </h3>
-                <p className="text-sm text-muted-foreground">
-                  {dict.why[`${value.key}.desc`]}
+                <p className="leading-relaxed text-muted-foreground">
+                  {dict.about.principles[part].desc}
                 </p>
               </article>
             ))}
@@ -160,51 +136,69 @@ export default async function AboutPage({
         </div>
       </section>
 
-      {/* Industries */}
-      <section className="bg-secondary py-20">
+      <section className="bg-background py-24">
         <div className="container mx-auto px-4">
-          <div className="mx-auto mb-12 max-w-3xl text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-accent">
-              {dict.industries.title}
-            </span>
-            <h2 className="mt-2 text-3xl font-bold text-foreground md:text-4xl">
-              {dict.industries.subtitle}
-            </h2>
-          </div>
-
-          <div className="mx-auto grid max-w-5xl grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-            {industries.map((industry) => (
-              <div
-                key={industry}
-                className="rounded-xl border border-border bg-background p-6 text-center transition-all hover:border-primary/30 hover:shadow-md"
-              >
-                <h3 className="mb-2 text-lg font-bold text-foreground">
-                  {dict.industries?.[industry]}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {dict.industries?.[`${industry}.desc`]}
-                </p>
-              </div>
-            ))}
+          <div className="grid items-start gap-16 lg:grid-cols-2">
+            <div>
+              <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+                — {dict.about.based.eyebrow}
+              </span>
+              <h2 className="mb-8 mt-4 font-serif text-3xl font-semibold leading-tight text-foreground md:text-5xl">
+                {dict.about.based.title}
+              </h2>
+              <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
+                {dict.about.based.body}
+              </p>
+              <p className="border-l-2 border-border pl-5 text-sm italic leading-relaxed text-muted-foreground/80">
+                {dict.about.sourcing.note}
+              </p>
+            </div>
+            <dl className="divide-y divide-border rounded-2xl border border-border bg-card p-8">
+              {facts.map((k) => (
+                <div
+                  key={k}
+                  className="grid grid-cols-3 gap-4 py-4 first:pt-0 last:pb-0"
+                >
+                  <dt className="text-sm uppercase tracking-wider text-muted-foreground">
+                    {dict.about[k].label}
+                  </dt>
+                  <dd className="col-span-2 font-medium text-foreground">
+                    {dict.about[k].value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="gradient-hero py-20">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-primary-foreground md:text-4xl">
-            {dict.cta.title}
+      <section className="relative h-64 overflow-hidden md:h-80">
+        <Image
+          src={flatlayImage}
+          alt="Assorted spices"
+          loading="lazy"
+          width={1600}
+          height={1000}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-primary/60" />
+      </section>
+
+      <section className="bg-secondary py-24">
+        <div className="container mx-auto max-w-2xl px-4 text-center">
+          <h2 className="mb-6 font-serif text-3xl font-semibold text-foreground md:text-4xl">
+            {locale === 'de'
+              ? 'Möchten Sie mehr über unsere Arbeitsweise erfahren?'
+              : 'Want to know more about how we work?'}
           </h2>
-          <p className="mx-auto mb-8 max-w-xl text-lg text-primary-foreground/90">
-            {dict.cta.subtitle}
+          <p className="mb-8 text-muted-foreground">
+            {locale === 'de'
+              ? 'Wir zeigen Ihnen unser Beschaffungsmodell, unsere Dokumentation und unsere Zeitpläne gerne im Detail.'
+              : "We're happy to walk you through our sourcing model, documentation, and timelines directly."}
           </p>
           <Button variant="hero" size="xl" asChild>
-            <Link
-              href={`/${locale}/contact`}
-              className="group inline-flex items-center gap-2 rounded-lg bg-accent px-8 py-4 text-lg font-semibold text-accent-foreground transition-all hover:bg-accent-hover hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
-            >
-              {dict.hero.cta.primary}
+            <Link href={`/${locale}/contact`} className="group">
+              {dict.navigation.contact}
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Link>
           </Button>
