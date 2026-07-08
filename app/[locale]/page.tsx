@@ -120,7 +120,7 @@ export default async function Home({
                 </Link>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
-                <Link href={`/${locale}/services`}>
+                <Link href={`/${locale}/products`}>
                   {dict.hero.cta.secondary}
                 </Link>
               </Button>
