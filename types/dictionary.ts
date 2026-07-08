@@ -192,6 +192,46 @@ export interface Dictionary {
       note: string;
     };
   };
+  products: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    items: {
+      id: string;
+      tag: string;
+      title: string;
+      origins: string;
+      desc: string;
+      forms: string;
+      pack: string;
+    }[];
+    label: {
+      forms: string;
+      pack: string;
+      qc: string;
+      qcValue: string;
+      docs: string;
+      docsValue: string;
+      lead: string;
+      leadValue: string;
+    };
+    oils: {
+      eyebrow: string;
+      title: string;
+      intro: string;
+    };
+    own: {
+      eyebrow: string;
+      title: string;
+      body: string;
+      cta: string;
+    };
+    quote: {
+      title: string;
+      body: string;
+      cta: string;
+    };
+  };
   contact: {
     eyebrow: string;
     title: string;

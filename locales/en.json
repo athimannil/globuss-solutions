@@ -203,6 +203,102 @@
       "note": "A note on sourcing: there is no single \"approved country\" whitelist for spice imports into the EU. Instead, every shipment is screened against current EU food-safety control requirements (Regulation (EU) 2019/1793 and related rules), which vary by product and origin and are updated every six months. We source only from countries permitted to export to the EU and build our documentation around whichever control level currently applies."
     }
   },
+  "products": {
+    "eyebrow": "Product range",
+    "title": "Spices, sourced and documented by origin",
+    "intro": "Every product line is sourced from named growing regions permitted for EU import, then lab-tested and packed in Berlin under German and EU food-safety standards. Documentation prepared to EU, US, and GCC import requirements. Available for wholesale and private-label inquiry.",
+    "items": [
+      {
+        "id": "pepper",
+        "tag": "Whole & ground",
+        "title": "Pepper & Cardamom",
+        "origins": "India · Vietnam · Sri Lanka",
+        "desc": "Black pepper, white pepper, and whole green cardamom sourced directly from growing regions in Kerala, India and the Vietnamese highlands. Available whole or ground, packed to buyer specification.",
+        "forms": "Whole, ground, cracked",
+        "pack": "Bulk (25kg), retail-ready private label"
+      },
+      {
+        "id": "aromatic",
+        "tag": "Aromatic spices",
+        "title": "Cinnamon, Cloves & Nutmeg",
+        "origins": "Sri Lanka · Indonesia · Vietnam",
+        "desc": "True cinnamon (Cinnamomum verum) and cassia, whole cloves, and nutmeg sourced from established growing regions across South and Southeast Asia, inspected and repacked in Berlin.",
+        "forms": "Whole, sticks, ground",
+        "pack": "Bulk (10-25kg), custom retail formats"
+      },
+      {
+        "id": "ground",
+        "tag": "Ground & powder",
+        "title": "Chilli, Turmeric & Cumin",
+        "origins": "India",
+        "desc": "Core Indian spice staples — chilli powder, turmeric, and cumin — along with custom masala blends formulated to buyer specification and packed under the Globuss brand or private label.",
+        "forms": "Powder, custom blends",
+        "pack": "Bulk (25kg), retail pouches"
+      },
+      {
+        "id": "blends",
+        "tag": "Specialty blends",
+        "title": "North African Herbs & Spice Blends",
+        "origins": "Morocco · Egypt · Turkey",
+        "desc": "Dried herbs and specialty spice blends sourced from North African and Eastern Mediterranean growing regions, for buyers looking to diversify beyond South Asian spice lines.",
+        "forms": "Whole, dried, custom blends",
+        "pack": "Bulk, custom retail formats"
+      },
+      {
+        "id": "oliveOil",
+        "tag": "oils",
+        "title": "Extra Virgin Olive Oil",
+        "origins": "Spain · Italy · Tunisia",
+        "desc": "Cold-pressed extra virgin olive oil sourced directly from Mediterranean mills, with full acidity and peroxide profiles verified on arrival in Berlin. Available in bulk drums, IBC totes, and retail glass bottles.",
+        "forms": "Extra virgin, virgin, refined",
+        "pack": "Bulk (1000L IBC, 200L drum), 1L/5L retail glass or PET"
+      },
+      {
+        "id": "sunflowerOil",
+        "tag": "oils",
+        "title": "Sunflower Oil",
+        "origins": "Ukraine · Turkey · Bulgaria",
+        "desc": "Refined and high-oleic sunflower oil for food-service, industrial, and retail buyers. Sourced from established crushing regions and shipped in flexitank, IBC, or filled bottle formats.",
+        "forms": "Refined, high-oleic, cold-pressed",
+        "pack": "Flexitank (22t), IBC, 1L-10L retail bottles"
+      },
+      {
+        "id": "palmOil",
+        "tag": "oils",
+        "title": "Palm Oil (RSPO)",
+        "origins": "Indonesia · Malaysia",
+        "desc": "RSPO-certified refined palm oil and palm olein for food manufacturers and industrial use. Sourced from segregated supply chains with full traceability documentation to mill level.",
+        "forms": "RBD palm oil, palm olein, palm stearin",
+        "pack": "Bulk (ISO tank), 200L drum, IBC"
+      }
+    ],
+    "label": {
+      "forms": "Forms available",
+      "pack": "Packaging",
+      "qc": "Quality control",
+      "qcValue": "Lab-tested & packed in Berlin, EC 852/2004",
+      "docs": "Documentation",
+      "docsValue": "COA, phytosanitary certificate, packing list",
+      "lead": "Lead time",
+      "leadValue": "Quoted per order volume"
+    },
+    "oils": {
+      "eyebrow": "Edible oils",
+      "title": "Cooking oils for wholesale & industrial buyers",
+      "intro": "Olive, sunflower and RSPO-certified palm oil — sourced from established producing regions and delivered in bulk, IBC or retail-ready formats, with full documentation for German and EU importers."
+    },
+    "own": {
+      "eyebrow": "Coming soon · Own production",
+      "title": "Pickles & bottled water",
+      "body": "Unlike our spice range, which we source and process, this line will be produced in-house by Globuss: small-batch pickles and bottled water, made and packaged by us in biodegradable materials. Built on the same direct-sourcing and traceability principles as our spice range, this line will be announced as it nears launch.",
+      "cta": "Register Interest"
+    },
+    "quote": {
+      "title": "Looking for volumes, samples, or private label?",
+      "body": "Send us your specification and target markets — we'll come back with sourcing options and indicative pricing.",
+      "cta": "Request a Quote"
+    }
+  },
   "contact": {
     "eyebrow": "Get in Touch",
     "title": "Let's talk volumes",
