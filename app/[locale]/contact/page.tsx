@@ -102,7 +102,7 @@ export default async function ContactPage({
                     <dt className="mb-1.5 text-xs uppercase tracking-widest text-muted-foreground">
                       {d.label}
                     </dt>
-                    <dd className="font-serif text-lg text-foreground">
+                    <dd className="text-lg text-foreground">
                       {d.href ? (
                         <a
                           href={d.href}

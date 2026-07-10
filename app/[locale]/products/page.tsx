@@ -139,9 +139,9 @@ export default async function ProductsPage({
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {items
-              .filter(({ tag }) => tag === 'oils')
-              .map((item, i) => (
+            {items.map((item, i) => {
+              if (item.tag !== 'oils') return null;
+              return (
                 <article
                   key={item.id}
                   className="card-hover animate-fade-in group flex flex-col overflow-hidden rounded-2xl border border-border bg-background text-foreground"
@@ -194,7 +194,8 @@ export default async function ProductsPage({
                     </dl>
                   </div>
                 </article>
-              ))}
+              );
+            })}
           </div>
         </div>
       </section>
