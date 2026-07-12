@@ -51,7 +51,11 @@ export default async function LocaleLayout({
   const dict = await getDictionary(typedLocale);
 
   return (
-    <html lang={typedLocale} suppressHydrationWarning>
+    <html
+      lang={typedLocale}
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+    >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

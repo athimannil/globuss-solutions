@@ -25,7 +25,7 @@ export async function generateMetadata({
 }: {
   params: { locale: Locale };
 }) {
-  const { locale } = params;
+  const { locale } = await params;
   const isDe = locale === 'de';
 
   const title = isDe
