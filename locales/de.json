@@ -187,10 +187,6 @@
       "label": "Handelsregister",
       "value": "HRB 285003 B"
     },
-    "vat": {
-      "label": "USt-IdNr.",
-      "value": "DE462214910"
-    },
     "activity": {
       "label": "Kerngeschäft",
       "value": "Lebensmittelimport, -verarbeitung & -export"

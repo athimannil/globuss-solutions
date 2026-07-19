@@ -187,10 +187,6 @@
       "label": "Commercial register",
       "value": "HRB 285003 B"
     },
-    "vat": {
-      "label": "VAT ID",
-      "value": "DE462214910"
-    },
     "activity": {
       "label": "Core activity",
       "value": "Food import, processing & export"

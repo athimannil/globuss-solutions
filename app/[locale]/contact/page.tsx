@@ -61,7 +61,6 @@ export default async function ContactPage({
       value: 'Böhlener Straße 1, 12627 Berlin, Germany',
     },
     { label: dict.contact.info.hr, value: 'HRB 285003 B' },
-    { label: dict.contact.info.vat, value: 'DE462214910' },
     {
       label: dict.contact.info.markets,
       value: dict.contact.info.value,

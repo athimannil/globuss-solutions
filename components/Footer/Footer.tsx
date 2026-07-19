@@ -86,7 +86,6 @@ const Footer = ({ locale, dict }: FooterProps) => {
             </h4>
             <ul className="space-y-3 text-sm text-primary-foreground/70">
               <li>HRB 285003 B</li>
-              <li>USt-IdNr. DE462214910</li>
               <li>
                 <a
                   href="mailto:info@globusssolutions.de"

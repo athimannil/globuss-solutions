@@ -54,7 +54,7 @@ export default async function AboutPage({
   const dict = await getDictionary(locale);
 
   const principles = ['part1', 'part2', 'part3', 'part4', 'part5'] as const;
-  const facts = ['company', 'office', 'hr', 'vat', 'activity', 'also'] as const;
+  const facts = ['company', 'office', 'hr', 'activity', 'also'] as const;
 
   return (
     <>
