@@ -113,7 +113,7 @@
   "coming": {
     "eyebrow": "Coming soon · Own production",
     "title": "Expanding beyond spices",
-    "body": "We're building our own production line for pickles and bottled water — not a relabeled third-party product, but a Globuss-made line packaged in biodegradable materials and built on the same direct-sourcing principles as our spice range. Details and availability will be announced as we move toward launch.",
+    "body": "We're building our own production line for pickles — not a relabeled third-party product, but a Globuss-made line packaged in biodegradable materials and built on the same direct-sourcing principles as our spice range. Details and availability will be announced as we move toward launch.",
     "stat1": {
       "value": "7",
       "label": "Sourcing regions"
@@ -285,8 +285,8 @@
     },
     "own": {
       "eyebrow": "Coming soon · Own production",
-      "title": "Pickles & bottled water",
-      "body": "Unlike our spice range, which we source and process, this line will be produced in-house by Globuss: small-batch pickles and bottled water, made and packaged by us in biodegradable materials. Built on the same direct-sourcing and traceability principles as our spice range, this line will be announced as it nears launch.",
+      "title": "Pickles",
+      "body": "Unlike our spice range, which we source and process, this line will be produced in-house by Globuss: small-batch pickles, made and packaged by us in biodegradable materials. Built on the same direct-sourcing and traceability principles as our spice range, this line will be announced as it nears launch.",
       "cta": "Register Interest"
     },
     "quote": {

@@ -113,7 +113,7 @@
   "coming": {
     "eyebrow": "Bald verfügbar · Eigene Produktion",
     "title": "Über Gewürze hinaus wachsen",
-    "body": "Wir bauen eine eigene Produktionslinie für Pickles und Trinkwasser in Flaschen auf — kein umetikettiertes Drittprodukt, sondern eine von Globuss hergestellte Linie, verpackt in biologisch abbaubaren Materialien und aufgebaut auf denselben Direktbeschaffungsprinzipien wie unser Gewürzsortiment. Details und Verfügbarkeit werden zum Launch bekanntgegeben.",
+    "body": "Wir bauen eine eigene Produktionslinie für Pickles auf — kein umetikettiertes Drittprodukt, sondern eine von Globuss hergestellte Linie, verpackt in biologisch abbaubaren Materialien und aufgebaut auf denselben Direktbeschaffungsprinzipien wie unser Gewürzsortiment. Details und Verfügbarkeit werden zum Launch bekanntgegeben.",
     "stat1": {
       "value": "7",
       "label": "Beschaffungsregionen"
@@ -311,8 +311,8 @@
     },
     "own": {
       "eyebrow": "Bald verfügbar · Eigene Produktion",
-      "title": "Pickles & Trinkwasser in Flaschen",
-      "body": "Anders als unser Gewürzsortiment, das wir beziehen und verarbeiten, wird diese Linie von Globuss selbst produziert: Pickles in kleinen Chargen und Trinkwasser in Flaschen, hergestellt und verpackt in biologisch abbaubaren Materialien. Aufgebaut auf denselben Direktbeschaffungs- und Rückverfolgbarkeitsprinzipien wie unser Gewürzsortiment — wird zum Launch angekündigt.",
+      "title": "Pickles",
+      "body": "Anders als unser Gewürzsortiment, das wir beziehen und verarbeiten, wird diese Linie von Globuss selbst produziert: Pickles in kleinen Chargen, hergestellt und verpackt in biologisch abbaubaren Materialien. Aufgebaut auf denselben Direktbeschaffungs- und Rückverfolgbarkeitsprinzipien wie unser Gewürzsortiment — wird zum Launch angekündigt.",
       "cta": "Interesse anmelden"
     },
 
